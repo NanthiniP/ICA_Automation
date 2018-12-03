@@ -16,9 +16,12 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import gov.mst.automation.ica.baseclass.BaseTest;
-import gov.mst.automation.ica.excelutility.ExcelUtility;
+import gov.mst.automation.ica.constant.Constant;
 
-public class LoginPage extends BaseTest{
+
+public class SFLoginPage extends BaseTest{
+	
+	SFLoginPage loginpage;
 	
 	@FindBy(how=How.XPATH,using=".//*[@id='username']")
 	public WebElement username;
@@ -28,12 +31,16 @@ public class LoginPage extends BaseTest{
 
 	@FindBy(how=How.XPATH,using=".//*[@id='Login']")
 	public WebElement login;
-
-	public static void login() throws Exception {
-		LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
-		loginpage.username.sendKeys(ExcelUtility.excelData("Contact", "TC01", "username"));
-		loginpage.password.sendKeys(ExcelUtility.excelData("Contact", "TC01", "password"));
+	
+	
+	public void login() throws Exception {
+		loginpage = PageFactory.initElements(driver, SFLoginPage.class);
+		driver.get(Constant.SFUrl);
+		loginpage.username.sendKeys(Constant.SFUserame);
+		loginpage.password.sendKeys(Constant.SFPassword);
 		loginpage.login.click();
 		
 	}
+	
+	
 }

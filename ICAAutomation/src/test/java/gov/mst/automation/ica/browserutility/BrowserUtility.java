@@ -19,15 +19,17 @@ import gov.mst.automation.ica.constant.Constant;
 
 public class BrowserUtility {
 	
-	static WebDriver driver;
+	WebDriver driver;
 	String browsername;
+	
 	
 	public BrowserUtility(String browsername)
 	{
 		this.browsername = browsername;
 	}
 	
-	public WebDriver openBrowser(String url) throws Exception
+	
+	public WebDriver openBrowser() throws Exception
 	{
 		if(browsername.equalsIgnoreCase("Chrome"))
 		{
@@ -50,12 +52,11 @@ public class BrowserUtility {
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get(url);
 		return driver;
 	}
 	
 	
-	public static void closeBrowser()
+	public void closeBrowser()
 	{
 		driver.close();
 	}

@@ -14,6 +14,14 @@ public class Constant {
 	
 	public static String chromepath = "C:\\Users\\MSTSYS0059\\Desktop\\Selenium Advanced\\Automation Training\\ICAAutomation\\src\\test\\resources\\Drivers\\chromedriver.exe";
 	public static String iepath = "C:\\Users\\MSTSYS0059\\Desktop\\Selenium Advanced\\Automation Training\\ICAAutomation\\src\\test\\resources\\Drivers\\IEDriverServer.exe";
-	public static String url = "https://login.salesforce.com/";
+	
+	
+	public static String EmpoyersReportVFPageUrl = "https://qadevpro2-azicawc-webforms.cs32.force.com/forms/Webform101_VF";
+	
+	
+	public static String SFUrl = "https://azica--qadevpro2.cs32.my.salesforce.com/";
+	public static String SFUserame = "divya.k@mstsolutions.com";
+	public static String SFPassword = "welcome123";
+	
 
 }

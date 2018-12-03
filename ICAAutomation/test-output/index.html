@@ -2,10 +2,9 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -49,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\MSTSYS0059\Desktop\Selenium Advanced\Automation Training\ICAAutomation\testng.xml</span>
+                    <span>C:\Users\MSTSYS0059\git\ICA\ICAAutomation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +101,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="gov.mst.automation.ica.testmodel.LoginTest" hash-for-method="loginValidation">loginValidation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="gov.mst.automation.ica.testmodel.EmployersReportFormTest" hash-for-method="formfill(Ivanjaln, Rakshanya, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, ...)">formfill(Ivanjaln, Rakshanya, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,14 +119,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">gov.mst.automation.ica.testmodel.LoginTest</span>
+              <span class="class-name">gov.mst.automation.ica.testmodel.EmployersReportFormTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginValidation">
-                  </a> <!-- loginValidation -->
-                  <span class="method-name">loginValidation</span>
+                  <a name="formfill(Ivanjaln, Rakshanya, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, ...)">
+                  </a> <!-- formfill(Ivanjaln, Rakshanya, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, ...) -->
+                  <span class="method-name">formfill</span>
+                  <span class="parameters">(Ivanjaln, Rakshanya, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, Gracy, 12345, Street, City, State, 98765, 9638520741, 11/25/2018, 11/26/2018, 11/27/2018, 5000, Yes, BoneBroken, Leg, Head - Eyes, Yes, Yes, Yes, Yes, Nothing, Stone, Occupational Disease or Cumulative Injury - Mental Disorder, Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals, Work, Yes, 11/20/2018, 15963, user@mail.com, D:\data.jpg)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\MSTSYS0059\Desktop\Selenium Advanced\Automation Training\ICAAutomation\testng.xml</span>
+            <span class="header-content">C:\Users\MSTSYS0059\git\ICA\ICAAutomation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +145,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browsername&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;gov.mst.automation.ica.testmodel.LoginTest&quot;/&gt;
+      &lt;class name=&quot;gov.mst.automation.ica.testmodel.EmployersReportFormTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -187,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginValidation')
-data.setCell(0, 2, 'gov.mst.automation.ica.testmodel.LoginTest')
-data.setCell(0, 3, 14884);
+data.setCell(0, 1, 'formfill')
+data.setCell(0, 2, 'gov.mst.automation.ica.testmodel.EmployersReportFormTest')
+data.setCell(0, 3, 45287);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -220,19 +220,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">gov.mst.automation.ica.testmodel.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">gov.mst.automation.ica.testmodel.EmployersReportFormTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser(chrome)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">317 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginValidation</span>
-                <span class="method-start">23806 ms</span>
+                <span class="method-name">formfill(Ivanjaln, Rakshanya, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, ...)</span>
+                <span class="method-start">12209 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">checkTestAfterExecution([TestResult name=formfill status=SUCCESS method=EmployersReportFormTest.formfill(java.lang.String, j...)</span>
+                <span class="method-start">57498 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">38693 ms</span>
+                <span class="method-start">57504 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59802 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

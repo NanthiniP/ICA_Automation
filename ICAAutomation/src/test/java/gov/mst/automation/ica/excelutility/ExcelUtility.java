@@ -22,13 +22,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
 	
-	static Workbook wb;
-	static Sheet sheetname1;
-	static String data;
+	 Workbook wb;
+	 Sheet sheetname;
+	 String data;
 		
-	public static Sheet selectSheet(String sheetname) throws Exception
+	public void selectSheet(String FileName, String SheetName) throws Exception
 	{
-		String file = "D:\\data.xlsx";
+		String file = FileName;
 		File f = new File(file);
 		FileInputStream in = new FileInputStream(f);
 		String extension = file.substring(file.indexOf('.'), file.length());
@@ -44,62 +44,70 @@ public class ExcelUtility {
 		{
 			throw new Exception("Invlid file Extension");
 		}
-		return wb.getSheet(sheetname);
+		sheetname = wb.getSheet(SheetName);
 			
 	}
-			
-	public static String excelData(String sheetname,String TcName,String filedname) throws Exception
+
+	
+	String convertString(int Row, int Col)
 	{
-		sheetname1 = selectSheet(sheetname);
-		int rows = sheetname1.getLastRowNum();
-		Object result = null;
+		int celltype = sheetname.getRow(Row).getCell(Col).getCellType();
+		
+		Object data = null;
+		
+		switch(celltype)
+		{
+		case Cell.CELL_TYPE_NUMERIC : //0
+			data =  new BigDecimal(sheetname.getRow(Row).getCell(Col).getNumericCellValue()).toPlainString();
+			break;
+			
+		case Cell.CELL_TYPE_STRING :  //1
+			data =  sheetname.getRow(Row).getCell(Col).getStringCellValue();
+			break;
+		
+		case Cell.CELL_TYPE_BOOLEAN :  //4
+			data = sheetname.getRow(Row).getCell(Col).getBooleanCellValue();
+			break;
+				
+		case Cell.CELL_TYPE_BLANK :  //3
+			data =  sheetname.getRow(Row).getCell(Col).getStringCellValue();
+			break;
+		
+		case Cell.CELL_TYPE_ERROR :  // 5
+			data =  sheetname.getRow(Row).getCell(Col).getErrorCellValue();
+			break;
+			
+		}
+		return data.toString();
+		
+	}
+	
+	
+	
+	public String[][] getData(String TcName) throws Exception
+	{
+		
+		int rows = sheetname.getLastRowNum();
+		
+		String[][] result= null;
 		
 		for(int i=1;i<=rows;i++)
 		{
-			String tcname = sheetname1.getRow(i).getCell(0).getStringCellValue();
+			String tcname = sheetname.getRow(i).getCell(0).getStringCellValue();
 			
 			if(tcname.equals(TcName))
 			{
-				int col = sheetname1.getRow(i).getLastCellNum();
-				for(int j=0;j<col;j++)
+				int col = sheetname.getRow(i).getLastCellNum();
+				result = new String[1][col-2];
+				for(int j=2;j<col;j++)
 				{
-					String colname = sheetname1.getRow(0).getCell(j).getStringCellValue();
-					
-					if(colname.equalsIgnoreCase(filedname))
-					{
-						int celltype = sheetname1.getRow(i).getCell(j).getCellType();
+					result[0][j-2] = convertString(i, j);					
+				}
 						
-						switch(celltype)
-						{
-						case Cell.CELL_TYPE_NUMERIC : //0
-							result = new BigDecimal(sheetname1.getRow(i).getCell(j).getNumericCellValue()).toPlainString();
-							break;
-							
-						case Cell.CELL_TYPE_STRING :  //1
-							result = sheetname1.getRow(i).getCell(j).getStringCellValue();
-							break;
-						
-						case Cell.CELL_TYPE_BOOLEAN :  //4
-							result = sheetname1.getRow(i).getCell(j).getBooleanCellValue();
-							break;
-								
-						case Cell.CELL_TYPE_BLANK :  //3
-							result = sheetname1.getRow(i).getCell(j).getStringCellValue();
-							break;
-						
-						case Cell.CELL_TYPE_ERROR :  // 5
-							result = sheetname1.getRow(i).getCell(j).getErrorCellValue();
-							break;
-							
-						}
-					}
-						
-					
 				}
 			}
-			
-		}
-			return result.toString();			
+								
+			return result;			
 	}
 
 }

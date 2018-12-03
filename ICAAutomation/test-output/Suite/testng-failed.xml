@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browsername" value="chrome"/>
+  <test name="Test(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="gov.mst.automation.ica.testmodel.EmployersReportFormTest">
+        <methods>
+          <include name="formfill" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- gov.mst.automation.ica.testmodel.EmployersReportFormTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
