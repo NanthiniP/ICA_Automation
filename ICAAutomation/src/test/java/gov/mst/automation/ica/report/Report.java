@@ -1,5 +1,13 @@
 package gov.mst.automation.ica.report;
 
+/*
+ 	* Author	 				: Nanthini PushpaRaja
+ 	* Created date			: Nov 26, 2018
+ 	* Last Edited by		: Nanthini PushpaRaja
+ 	* Last Edited date		: Dec 08, 2018
+ 	* Description			: Class is used to define the methods for common actions for the project
+*/ 
+
 import java.io.File;
 import java.io.IOException;
 import org.apache.commons.io.FileUtils;
@@ -13,6 +21,8 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
 public class Report {
@@ -22,26 +32,30 @@ public class Report {
 	static ExtentTest parentTest;
 	static ExtentTest childTest;
 		
-		
-	public static void startReport() 
+	
+	// Method is used to initialize the report
+	
+	public static void initReport() 
 	{
 		String projectRootDirectory = System.getProperty("user.dir");
 		extentHtmlReporter = new ExtentHtmlReporter(projectRootDirectory+"/extentreport.html");
 		extentReport = new ExtentReports();
 		extentReport.attachReporter(extentHtmlReporter);
 		
-		/*extentReport.setSystemInfo("OS", "Windows");
+		extentReport.setSystemInfo("OS", "Windows");
 		extentReport.setSystemInfo("Environment", "QA");
 		extentReport.setSystemInfo("Username", "Manual tester");
 		extentReport.setSystemInfo("Selenium Version", "3.0");
-		extentReport.setSystemInfo("Java Version", "1.8");*/
+		extentReport.setSystemInfo("Java Version", "1.8");
 		
-		/*extentHtmlReporter.config().setDocumentTitle("Automation Report");
+		extentHtmlReporter.config().setDocumentTitle("Automation Report");
 		extentHtmlReporter.config().setReportName("Demo");
 		extentHtmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
-		extentHtmlReporter.config().setTheme(Theme.STANDARD);*/
+		extentHtmlReporter.config().setTheme(Theme.STANDARD);
 	}
 	
+	
+	// Method is used to create the test name in the report
 	
 	public static void startTest(String testName, String description, String author, String testCategory)
 	{
@@ -50,6 +64,8 @@ public class Report {
 		parentTest.assignCategory(testCategory);
 	}
 	
+	
+	// Method is used to create the test step in the report
 	
 	public static void testStepStatus(String testStep, String status, String description) throws Exception
 	{
@@ -78,6 +94,8 @@ public class Report {
 		
 	}
 	
+	
+	// Method is used to evaluate whether the test is passed or failed and send the status to report
 		
 	public static void checkTestAfterExecution(ITestResult result, WebDriver driver) throws IOException {
 		String methodName = result.getMethod().getMethodName();
@@ -96,10 +114,15 @@ public class Report {
 	}
 	
 	
-	public static void tearDown() 
+	// Method is used to create the report
+	
+	public static void closeReport() 
 	{
 		extentReport.flush();
 	}
+	
+	
+	// Method is used to take scrrenshot if the test is failed
 	
 	public static void logScreenshot(WebDriver screenDriver, String testCaseName, String res) throws IOException {
 		File file = ((TakesScreenshot) screenDriver).getScreenshotAs(OutputType.FILE);

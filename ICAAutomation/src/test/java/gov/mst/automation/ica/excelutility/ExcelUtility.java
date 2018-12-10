@@ -1,14 +1,12 @@
 package gov.mst.automation.ica.excelutility;
 
-/**
- * 
- * @author Nanthini PushpaRaja
- * Created date: Nov 26, 2018
- * Last Edited by: Nanthini PushpaRaja
- * Last Edited date: Nov 26, 2018
- * Description: This ExcelUtility is used to perform the read and write operations on excel sheet
- */ 
-
+/*
+	* Author	 				: Nanthini PushpaRaja
+	* Created date			: Nov 26, 2018
+	* Last Edited by		: Nanthini PushpaRaja
+	* Last Edited date		: Dec 08, 2018
+	* Description			: Class is used to define the methods to get the data from excel
+*/ 
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,11 +20,20 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
 	
-	 Workbook wb;
-	 Sheet sheetname;
+	 Workbook workbook;
+	 Sheet sheet;
 	 String data;
-		
-	public void selectSheet(String FileName, String SheetName) throws Exception
+	 String FileName;
+	 
+	 public ExcelUtility(String FileName)
+	 {
+		 this.FileName = FileName;
+	 }
+	 
+	 
+	 // Method is used to get the sheet from the file using the given file name and sheet name
+	 
+	public void selectSheet(String SheetName) throws Exception
 	{
 		String file = FileName;
 		File f = new File(file);
@@ -34,47 +41,50 @@ public class ExcelUtility {
 		String extension = file.substring(file.indexOf('.'), file.length());
 		if(extension.equals(".xls"))
 		{
-	       wb = new HSSFWorkbook(in);
+			workbook = new HSSFWorkbook(in);
 		}
 		else if(extension.equals(".xlsx"))
 		{
-			wb = new XSSFWorkbook(in);
+			workbook = new XSSFWorkbook(in);
 		}
 		else
 		{
 			throw new Exception("Invlid file Extension");
 		}
-		sheetname = wb.getSheet(SheetName);
-			
+		sheet = workbook.getSheet(SheetName);
+		
 	}
 
 	
-	String convertString(int Row, int Col)
+	
+	// Method is used to get the data from any type of cell and returns the data as String
+	
+	public  String  getStringData(int Row, int Col)
 	{
-		int celltype = sheetname.getRow(Row).getCell(Col).getCellType();
+		int celltype = sheet.getRow(Row).getCell(Col).getCellType();
 		
 		Object data = null;
 		
 		switch(celltype)
 		{
 		case Cell.CELL_TYPE_NUMERIC : //0
-			data =  new BigDecimal(sheetname.getRow(Row).getCell(Col).getNumericCellValue()).toPlainString();
+			data =  new BigDecimal(sheet.getRow(Row).getCell(Col).getNumericCellValue()).toPlainString();
 			break;
 			
 		case Cell.CELL_TYPE_STRING :  //1
-			data =  sheetname.getRow(Row).getCell(Col).getStringCellValue();
+			data =  sheet.getRow(Row).getCell(Col).getStringCellValue();
 			break;
 		
 		case Cell.CELL_TYPE_BOOLEAN :  //4
-			data = sheetname.getRow(Row).getCell(Col).getBooleanCellValue();
+			data = sheet.getRow(Row).getCell(Col).getBooleanCellValue();
 			break;
 				
 		case Cell.CELL_TYPE_BLANK :  //3
-			data =  sheetname.getRow(Row).getCell(Col).getStringCellValue();
+			data =  sheet.getRow(Row).getCell(Col).getStringCellValue();
 			break;
 		
 		case Cell.CELL_TYPE_ERROR :  // 5
-			data =  sheetname.getRow(Row).getCell(Col).getErrorCellValue();
+			data =  sheet.getRow(Row).getCell(Col).getErrorCellValue();
 			break;
 			
 		}
@@ -83,31 +93,56 @@ public class ExcelUtility {
 	}
 	
 	
+	// Method is used to return the data from a column
 	
-	public String[][] getData(String TcName) throws Exception
+	public String getData(String tcName, String columnName) throws Exception
 	{
 		
-		int rows = sheetname.getLastRowNum();
+		int rows = sheet.getLastRowNum();
 		
-		String[][] result= null;
+		String result= null;
 		
 		for(int i=1;i<=rows;i++)
 		{
-			String tcname = sheetname.getRow(i).getCell(0).getStringCellValue();
+			String tcname = sheet.getRow(i).getCell(0).getStringCellValue();
 			
-			if(tcname.equals(TcName))
+			if(tcname.equals(tcName))
 			{
-				int col = sheetname.getRow(i).getLastCellNum();
-				result = new String[1][col-2];
+				int col = sheet.getRow(i).getLastCellNum();
+				
 				for(int j=2;j<col;j++)
 				{
-					result[0][j-2] = convertString(i, j);					
+					String colname = sheet.getRow(0).getCell(j).getStringCellValue();
+					
+					if(colname.equalsIgnoreCase(columnName))
+					{
+						result = getStringData(i, j);	
+					}
+									
 				}
 						
 				}
 			}
 								
 			return result;			
+	}
+	
+	
+	// Method is used to count the total number of rows in a sheet
+	
+	public int getTotalRows()
+	{
+		int rows = sheet.getLastRowNum();
+		return rows;
+	}
+	
+	
+	// Method is used to count the total number of columns in a row
+	
+	public int getTotalColumns(int Row)
+	{
+		int col = sheet.getRow(Row).getLastCellNum();
+		return col;
 	}
 
 }
