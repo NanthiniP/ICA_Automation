@@ -11,7 +11,6 @@ package gov.mst.automation.ica.excelutility;
 import java.io.File;
 import java.io.FileInputStream;
 import java.math.BigDecimal;
-
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -55,43 +54,24 @@ public class ExcelUtility {
 		
 	}
 
+	// Method is used to count the total number of rows in a sheet
 	
-	
-	// Method is used to get the data from any type of cell and returns the data as String
-	
-	public  String  getStringData(int Row, int Col)
-	{
-		int celltype = sheet.getRow(Row).getCell(Col).getCellType();
-		
-		Object data = null;
-		
-		switch(celltype)
+		public int getTotalRows()
 		{
-		case Cell.CELL_TYPE_NUMERIC : //0
-			data =  new BigDecimal(sheet.getRow(Row).getCell(Col).getNumericCellValue()).toPlainString();
-			break;
-			
-		case Cell.CELL_TYPE_STRING :  //1
-			data =  sheet.getRow(Row).getCell(Col).getStringCellValue();
-			break;
-		
-		case Cell.CELL_TYPE_BOOLEAN :  //4
-			data = sheet.getRow(Row).getCell(Col).getBooleanCellValue();
-			break;
-				
-		case Cell.CELL_TYPE_BLANK :  //3
-			data =  sheet.getRow(Row).getCell(Col).getStringCellValue();
-			break;
-		
-		case Cell.CELL_TYPE_ERROR :  // 5
-			data =  sheet.getRow(Row).getCell(Col).getErrorCellValue();
-			break;
-			
+			int rows = sheet.getLastRowNum();
+			return rows;
 		}
-		return data.toString();
 		
-	}
-	
+		
+		// Method is used to count the total number of columns in a row
+		
+		public int getTotalColumns(int Row)
+		{
+			int col = sheet.getRow(Row).getLastCellNum();
+			return col;
+		}
+		
+		
 	
 	// Method is used to return the data from a column
 	
@@ -128,21 +108,39 @@ public class ExcelUtility {
 	}
 	
 	
-	// Method is used to count the total number of rows in a sheet
+	// Method is used to get the data from any type of cell and returns the data as String
 	
-	public int getTotalRows()
-	{
-		int rows = sheet.getLastRowNum();
-		return rows;
-	}
-	
-	
-	// Method is used to count the total number of columns in a row
-	
-	public int getTotalColumns(int Row)
-	{
-		int col = sheet.getRow(Row).getLastCellNum();
-		return col;
-	}
-
+		public  String  getStringData(int Row, int Col)
+		{
+			int celltype = sheet.getRow(Row).getCell(Col).getCellType();
+			
+			Object data = null;
+			
+			switch(celltype)
+			{
+			case Cell.CELL_TYPE_NUMERIC : //0
+				data =  new BigDecimal(sheet.getRow(Row).getCell(Col).getNumericCellValue()).toPlainString();
+				break;
+				
+			case Cell.CELL_TYPE_STRING :  //1
+				data =  sheet.getRow(Row).getCell(Col).getStringCellValue();
+				break;
+			
+			case Cell.CELL_TYPE_BOOLEAN :  //4
+				data = sheet.getRow(Row).getCell(Col).getBooleanCellValue();
+				break;
+					
+			case Cell.CELL_TYPE_BLANK :  //3
+				data =  sheet.getRow(Row).getCell(Col).getStringCellValue();
+				break;
+			
+			case Cell.CELL_TYPE_ERROR :  // 5
+				data =  sheet.getRow(Row).getCell(Col).getErrorCellValue();
+				break;
+				
+			}
+			return data.toString();
+			
+		}
+		
 }

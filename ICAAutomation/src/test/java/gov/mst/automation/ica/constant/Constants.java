@@ -8,7 +8,7 @@ package gov.mst.automation.ica.constant;
 	* Description			: Class is used to define the constant values for the project
 */ 
 
-public class ApplicationConstants {
+public class Constants {
 	
 	
 	//	Driver paths	

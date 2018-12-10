@@ -5,7 +5,7 @@ package gov.mst.automation.ica.elements;
  	* Created date			: Nov 26, 2018
  	* Last Edited by		: Nanthini PushpaRaja
  	* Last Edited date		: Dec 08, 2018
- 	* Description			: This Constant is used to define the constant values for the project
+ 	* Description			: Class is used to define elements in the Employer Report Form
  */ 
 
 import org.openqa.selenium.WebDriver;
@@ -189,7 +189,13 @@ public class EmployerReportFormElements {
 	public WebElement importantNote;
 	
 	
-	//	Method is used to initialize all the elements in the Employer Report Form and returns all the elements
+	// EROR MESSAGE
+	
+	@FindBy(how = How.XPATH , using = ".//ul[@role='alert']/li[1]")
+	public WebElement ErrorMessageList;
+	
+	
+	//	Method is used to initialize and returns all the elements in the Employer Report Form
 	
 	public static EmployerReportFormElements elements(WebDriver driver)										
 	{

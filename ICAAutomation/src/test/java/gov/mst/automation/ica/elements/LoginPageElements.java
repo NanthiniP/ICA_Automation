@@ -5,7 +5,7 @@ package gov.mst.automation.ica.elements;
 	* Created date			: Nov 26, 2018
 	* Last Edited by		: Nanthini PushpaRaja
 	* Last Edited date		: Dec 08, 2018
-	* Description			: Class is used to define the actions in Employer Report Form
+	* Description			: Class is used to define the elements in the Login page
 */
 
 import org.openqa.selenium.WebDriver;
@@ -39,7 +39,7 @@ public class LoginPageElements {
 	public WebElement login;
 	
 	
-	//	Method is used to initialize all the elements in the Login Window and returns all the elements
+	//	Method is used to initialize and returns all the elements in the Login Page
 	
 	public static LoginPageElements elements(WebDriver driver)										
 	{

@@ -38,7 +38,7 @@ public class Report {
 	public static void initReport() 
 	{
 		String projectRootDirectory = System.getProperty("user.dir");
-		extentHtmlReporter = new ExtentHtmlReporter(projectRootDirectory+"/extentreport.html");
+		extentHtmlReporter = new ExtentHtmlReporter(projectRootDirectory+"\\src\\test\\resources\\Reports\\extentreport.html");
 		extentReport = new ExtentReports();
 		extentReport.attachReporter(extentHtmlReporter);
 		
@@ -57,9 +57,9 @@ public class Report {
 	
 	// Method is used to create the test name in the report
 	
-	public static void startTest(String testName, String description, String author, String testCategory)
+	public static void startTest(String testId, String description, String author, String testCategory)
 	{
-		parentTest = extentReport.createTest(testName, description);
+		parentTest = extentReport.createTest(testId, description);
 		parentTest.assignAuthor(author);
 		parentTest.assignCategory(testCategory);
 	}

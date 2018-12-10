@@ -1,11 +1,11 @@
 package gov.mst.automation.ica.commonutility;
 
 /*
-	* Author	 				: Nanthini PushpaRaja
-	* Created date			: Nov 26, 2018
+ 	* Author	 				: Nanthini PushpaRaja
+ 	* Created date			: Nov 26, 2018
 	* Last Edited by		: Nanthini PushpaRaja
 	* Last Edited date		: Dec 08, 2018
-	* Description			: Class is used to define the methods for common actions for the project
+	* Description			: Class is used to define the general actions executed in the project
 */ 
 
 import java.awt.AWTException;
@@ -21,23 +21,12 @@ import org.openqa.selenium.support.ui.Select;
 
 import gov.mst.automation.ica.elements.LookupWindowElements;
 
-public class Actions {
-	
-	WebDriver driver;
-	LookupWindowElements lookupwindow;
+public class CommonActions {
 		
-	
-	// Constructor is used to initialize the driver
-	
-	public Actions(WebDriver driver)													
-	{
-		this.driver = driver;
-	}
-	
-	
+		
 	// Method is used to upload a file
 	
-	public void fileUpload(String UploadFilePath) throws AWTException, InterruptedException
+	public static void fileUpload(String UploadFilePath) throws AWTException, InterruptedException
 	{
 		StringSelection uploadfile = new StringSelection(UploadFilePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(uploadfile, null);
@@ -64,9 +53,9 @@ public class Actions {
 	
 	// Method is used to search and select a value from lookup window
 	
-	public void lookup(WebElement lookupField, String lookupvalue)
+	public static void lookup(WebDriver driver, WebElement lookupField, String lookupvalue)
 	{
-		lookupwindow = LookupWindowElements.elements(driver);
+		LookupWindowElements lookupwindow = LookupWindowElements.elements(driver);
 		lookupField.click();
 		Set<String> windows = driver.getWindowHandles();
 		for(String window:windows)
@@ -100,7 +89,7 @@ public class Actions {
 	
 	// Method is used to select a value from Drop down
 	
-	public void selectDropdownValue(WebElement DropdownElement, String DropdownValue)
+	public static void selectDropdownValue(WebElement DropdownElement, String DropdownValue)
 	{
 		Select s = new Select(DropdownElement); 
 		s.selectByVisibleText(DropdownValue);

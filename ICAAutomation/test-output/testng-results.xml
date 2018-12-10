@@ -1,17 +1,1648 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="2" failed="3" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20728" started-at="2018-12-10T09:57:45Z" finished-at="2018-12-10T09:58:06Z">
+  <suite name="Suite" duration-ms="176342" started-at="2018-12-10T18:24:11Z" finished-at="2018-12-10T18:27:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20728" started-at="2018-12-10T09:57:45Z" finished-at="2018-12-10T09:58:06Z">
-      <class name="gov.mst.automation.ica.commonutility.Email">
-        <test-method status="PASS" signature="EmailVerify()[pri:0, instance:gov.mst.automation.ica.commonutility.Email@1a968a59]" name="EmailVerify" duration-ms="20702" started-at="2018-12-10T15:27:46Z" finished-at="2018-12-10T15:28:06Z">
+    <test name="Test" duration-ms="176342" started-at="2018-12-10T18:24:11Z" finished-at="2018-12-10T18:27:08Z">
+      <class name="gov.mst.automation.ica.testmodel.EmployersReportFormTest">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="startReport" is-config="true" duration-ms="269" started-at="2018-12-10T23:54:11Z" finished-at="2018-12-10T23:54:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EmailVerify -->
-      </class> <!-- gov.mst.automation.ica.commonutility.Email -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="openBrowser" is-config="true" duration-ms="4637" started-at="2018-12-10T23:54:11Z" finished-at="2018-12-10T23:54:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="formfill" duration-ms="36270" started-at="2018-12-10T23:54:17Z" data-provider="EmployerReportForm" finished-at="2018-12-10T23:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Check whether the values are properly submitted in the Employer Report Form]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ivanjaln]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Rakshanya]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123-12-1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11/29/2018]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[City]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[98765]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[9638520741]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[11/25/2018]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[11/26/2018]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[11/27/2018]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[BoneBroken]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Leg]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Head - Eyes]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[Nothing]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[Stone]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[Occupational Disease or Cumulative Injury - Mental Disorder]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[Work]]>
+              </value>
+            </param>
+            <param index="37">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="38">
+              <value>
+                <![CDATA[11/20/2018]]>
+              </value>
+            </param>
+            <param index="39">
+              <value>
+                <![CDATA[15963]]>
+              </value>
+            </param>
+            <param index="40">
+              <value>
+                <![CDATA[user@mail.com]]>
+              </value>
+            </param>
+            <param index="41">
+              <value>
+                <![CDATA[D:\data.jpg]]>
+              </value>
+            </param>
+            <param index="42">
+              <value>
+                <![CDATA[Thank you for your submission!]]>
+              </value>
+            </param>
+            <param index="43">
+              <value>
+                <![CDATA[IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formfill -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="checkTestAfterExecution" is-config="true" duration-ms="4" started-at="2018-12-10T23:54:53Z" finished-at="2018-12-10T23:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=formfill status=SUCCESS method=EmployersReportFormTest.formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestAfterExecution -->
+        <test-method status="SKIP" signature="formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="formfill" duration-ms="26609" started-at="2018-12-10T23:54:53Z" data-provider="EmployerReportForm" finished-at="2018-12-10T23:55:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Check whether the values are properly submitted in the Employer Report Form]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Suganthini]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123-12-1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11/29/2018]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[City]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[98765]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[9638520741]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[11/25/2018]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[11/26/2018]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[11/27/2018]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[BoneBroken]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Leg]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Head - Eyes]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[Nothing]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[Stone]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[Occupational Disease or Cumulative Injury - Mental Disorder]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[Work]]>
+              </value>
+            </param>
+            <param index="37">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="38">
+              <value>
+                <![CDATA[11/20/2018]]>
+              </value>
+            </param>
+            <param index="39">
+              <value>
+                <![CDATA[15963]]>
+              </value>
+            </param>
+            <param index="40">
+              <value>
+                <![CDATA[user@mail.com]]>
+              </value>
+            </param>
+            <param index="41">
+              <value>
+                <![CDATA[D:\data.jpg]]>
+              </value>
+            </param>
+            <param index="42">
+              <value>
+                <![CDATA[Thank you for your ]]>
+              </value>
+            </param>
+            <param index="43">
+              <value>
+                <![CDATA[IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.formfill(EmployersReportFormTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formfill -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="checkTestAfterExecution" is-config="true" duration-ms="1" started-at="2018-12-10T23:55:20Z" finished-at="2018-12-10T23:55:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=formfill status=SKIP method=EmployersReportFormTest.formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestAfterExecution -->
+        <test-method status="SKIP" signature="formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="formfill" duration-ms="25242" started-at="2018-12-10T23:55:20Z" data-provider="EmployerReportForm" finished-at="2018-12-10T23:55:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Check whether the values are properly submitted in the Employer Report Form]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Suganthini]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123-12-1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11/29/2018]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[City]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[98765]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[9638520741]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[11/25/2018]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[11/26/2018]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[11/27/2018]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[BoneBroken]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Leg]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Head - Eyes]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[Nothing]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[Stone]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[Occupational Disease or Cumulative Injury - Mental Disorder]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[Work]]>
+              </value>
+            </param>
+            <param index="37">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="38">
+              <value>
+                <![CDATA[11/20/2018]]>
+              </value>
+            </param>
+            <param index="39">
+              <value>
+                <![CDATA[15963]]>
+              </value>
+            </param>
+            <param index="40">
+              <value>
+                <![CDATA[user@mail.com]]>
+              </value>
+            </param>
+            <param index="41">
+              <value>
+                <![CDATA[D:\data.jpg]]>
+              </value>
+            </param>
+            <param index="42">
+              <value>
+                <![CDATA[Thank you for your ]]>
+              </value>
+            </param>
+            <param index="43">
+              <value>
+                <![CDATA[IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.formfill(EmployersReportFormTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formfill -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="checkTestAfterExecution" is-config="true" duration-ms="0" started-at="2018-12-10T23:55:45Z" finished-at="2018-12-10T23:55:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=formfill status=SKIP method=EmployersReportFormTest.formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestAfterExecution -->
+        <test-method status="FAIL" signature="formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="formfill" duration-ms="28217" started-at="2018-12-10T23:55:45Z" data-provider="EmployerReportForm" finished-at="2018-12-10T23:56:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Check whether the values are properly submitted in the Employer Report Form]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Suganthini]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123-12-1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11/29/2018]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[City]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[98765]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[9638520741]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[11/25/2018]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[11/26/2018]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[11/27/2018]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[BoneBroken]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Leg]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Head - Eyes]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[Nothing]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[Stone]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[Occupational Disease or Cumulative Injury - Mental Disorder]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[Work]]>
+              </value>
+            </param>
+            <param index="37">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="38">
+              <value>
+                <![CDATA[11/20/2018]]>
+              </value>
+            </param>
+            <param index="39">
+              <value>
+                <![CDATA[15963]]>
+              </value>
+            </param>
+            <param index="40">
+              <value>
+                <![CDATA[user@mail.com]]>
+              </value>
+            </param>
+            <param index="41">
+              <value>
+                <![CDATA[D:\data.jpg]]>
+              </value>
+            </param>
+            <param index="42">
+              <value>
+                <![CDATA[Thank you for your ]]>
+              </value>
+            </param>
+            <param index="43">
+              <value>
+                <![CDATA[IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.formfill(EmployersReportFormTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formfill -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="checkTestAfterExecution" is-config="true" duration-ms="325" started-at="2018-12-10T23:56:14Z" finished-at="2018-12-10T23:56:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=formfill status=FAILURE method=EmployersReportFormTest.formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestAfterExecution -->
+        <test-method status="FAIL" signature="formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="formfill" duration-ms="25410" started-at="2018-12-10T23:56:14Z" data-provider="EmployerReportForm" finished-at="2018-12-10T23:56:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Check whether the values are properly submitted in the Employer Report Form]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Suzana]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Charan]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123-12-1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11/29/2018]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[City]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[98765]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[9638520741]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[11/25/2018]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[11/26/2018]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[11/27/2018]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[BoneBroken]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Leg]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Head - Eyes]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[Nothing]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[Stone]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[Occupational Disease or Cumulative Injury - Mental Disorder]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[Work]]>
+              </value>
+            </param>
+            <param index="37">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="38">
+              <value>
+                <![CDATA[11/20/2018]]>
+              </value>
+            </param>
+            <param index="39">
+              <value>
+                <![CDATA[15963]]>
+              </value>
+            </param>
+            <param index="40">
+              <value>
+                <![CDATA[user@mail.com]]>
+              </value>
+            </param>
+            <param index="41">
+              <value>
+                <![CDATA[D:\data.jpg]]>
+              </value>
+            </param>
+            <param index="42">
+              <value>
+                <![CDATA[Thank you for your submission!]]>
+              </value>
+            </param>
+            <param index="43">
+              <value>
+                <![CDATA[THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.formfill(EmployersReportFormTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formfill -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="checkTestAfterExecution" is-config="true" duration-ms="296" started-at="2018-12-10T23:56:39Z" finished-at="2018-12-10T23:56:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=formfill status=FAILURE method=EmployersReportFormTest.formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestAfterExecution -->
+        <test-method status="FAIL" signature="formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="formfill" duration-ms="25456" started-at="2018-12-10T23:56:40Z" data-provider="EmployerReportForm" finished-at="2018-12-10T23:57:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Check whether the values are properly submitted in the Employer Report Form]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Suzana]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Charan]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123-12-1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11/29/2018]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Gracy]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Street]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[City]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[State]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[98765]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[9638520741]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[11/25/2018]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[11/26/2018]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[11/27/2018]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[BoneBroken]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Leg]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Head - Eyes]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[Nothing]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[Stone]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[Occupational Disease or Cumulative Injury - Mental Disorder]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[Work]]>
+              </value>
+            </param>
+            <param index="37">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="38">
+              <value>
+                <![CDATA[11/20/2018]]>
+              </value>
+            </param>
+            <param index="39">
+              <value>
+                <![CDATA[15963]]>
+              </value>
+            </param>
+            <param index="40">
+              <value>
+                <![CDATA[user@mail.com]]>
+              </value>
+            </param>
+            <param index="41">
+              <value>
+                <![CDATA[D:\data.jpg]]>
+              </value>
+            </param>
+            <param index="42">
+              <value>
+                <![CDATA[Thank you for your submission!]]>
+              </value>
+            </param>
+            <param index="43">
+              <value>
+                <![CDATA[THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.formfill(EmployersReportFormTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formfill -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="checkTestAfterExecution" is-config="true" duration-ms="332" started-at="2018-12-10T23:57:05Z" finished-at="2018-12-10T23:57:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=formfill status=FAILURE method=EmployersReportFormTest.formfill(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestAfterExecution -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="closeBrowser" is-config="true" duration-ms="2133" started-at="2018-12-10T23:57:06Z" finished-at="2018-12-10T23:57:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@402a079c]" name="tearDown" is-config="true" duration-ms="509" started-at="2018-12-10T23:57:08Z" finished-at="2018-12-10T23:57:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- gov.mst.automation.ica.testmodel.EmployersReportFormTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

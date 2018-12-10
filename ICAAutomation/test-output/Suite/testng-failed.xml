@@ -3,17 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="browserName" value="chrome"/>
   <listeners>
-    <listener class-name="gov.mst.automation.ica.failedtests.RetryListener"/>
+    <listener class-name="gov.mst.automation.ica.commonutility.RetryListener"/>
   </listeners>
   <test name="Test(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
       <class name="gov.mst.automation.ica.testmodel.EmployersReportFormTest">
         <methods>
-          <include name="formfill" invocation-numbers="0"/>
+          <include name="formfill" invocation-numbers="1 1 1 2 2"/>
+          <include name="closeBrowser"/>
           <include name="startReport"/>
           <include name="openBrowser"/>
           <include name="checkTestAfterExecution"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- gov.mst.automation.ica.testmodel.EmployersReportFormTest -->
     </classes>

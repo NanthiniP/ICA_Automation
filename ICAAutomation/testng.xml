@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-        <listener class-name="gov.mst.automation.ica.failedtests.RetryListener"/>
+        <listener class-name="gov.mst.automation.ica.commonutility.RetryListener"/>
   </listeners>
   <test thread-count="5" name="Test">
   <parameter name = "browserName" value = "chrome"></parameter>

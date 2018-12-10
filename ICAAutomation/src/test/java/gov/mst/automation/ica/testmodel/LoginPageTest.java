@@ -5,7 +5,7 @@ package gov.mst.automation.ica.testmodel;
 	* Created date			: Nov 26, 2018
 	* Last Edited by		: Nanthini PushpaRaja
 	* Last Edited date		: Dec 08, 2018
-	* Description			: Class is used to define the actions in Employer Report Form
+	* Description			: Class is used to login into Sales force
 */
 
 import org.testng.annotations.Test;
@@ -15,6 +15,8 @@ import gov.mst.automation.ica.pagemodel.LoginPage;
 
 public class LoginPageTest extends BaseTest{
 	
+	
+	// Test is used to login into salesforce
 	@Test
 	public void loginValidation() throws Exception
 	{

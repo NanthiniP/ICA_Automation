@@ -5,11 +5,10 @@ package gov.mst.automation.ica.elements;
  	* Created date			: Nov 26, 2018
  	* Last Edited by		: Nanthini PushpaRaja
  	* Last Edited date		: Dec 08, 2018
- 	* Description			: This Constant is used to define the constant values for the project
+ 	* Description			: Class is used to define the elements in the Lookup window
  */ 
 
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

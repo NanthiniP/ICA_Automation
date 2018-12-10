@@ -5,7 +5,7 @@ package gov.mst.automation.ica.baseclass;
  	* Created date			: Nov 26, 2018
  	* Last Edited by		: Nanthini PushpaRaja
  	* Last Edited date		: Dec 08, 2018
- 	* Description			: Class is used to run the Pre and Post steps for test cases
+ 	* Description			: Class is used to execute the Pre and Post steps for the test cases
 */ 
 
 import java.io.IOException;
