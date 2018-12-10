@@ -1,4 +1,4 @@
-package gov.mst.automation.ica.pagemodel;
+package gov.mst.automation.ica.commonutility;
 
 /*
 	* Author	 				: Nanthini PushpaRaja

@@ -8,7 +8,6 @@ package gov.mst.automation.ica.commonutility;
  	* Description			: Class is used to define the email actions
 */ 
 
-
 import java.util.Properties;
 import javax.mail.Address;
 import javax.mail.BodyPart;
@@ -19,7 +18,6 @@ import javax.mail.Multipart;
 import javax.mail.Session;
 import javax.mail.Store;
 import org.jsoup.Jsoup;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import gov.mst.automation.ica.constant.ApplicationConstants;
