@@ -27,7 +27,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import gov.mst.automation.ica.baseclass.BaseTest;
 import gov.mst.automation.ica.constant.ApplicationConstants;
-import gov.mst.sutomation.ica.elements.LoginPageElements;
+import gov.mst.automation.ica.elements.LoginPageElements;
 
 public class LoginPage {
 	

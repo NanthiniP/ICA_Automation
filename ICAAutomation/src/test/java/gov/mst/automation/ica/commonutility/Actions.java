@@ -19,7 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import gov.mst.sutomation.ica.elements.LookupWindowElements;
+import gov.mst.automation.ica.elements.LookupWindowElements;
 
 public class Actions {
 	

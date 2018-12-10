@@ -1,4 +1,4 @@
-package gov.mst.sutomation.ica.elements;
+package gov.mst.automation.ica.elements;
 
 /*
  	* Author	 				: Nanthini PushpaRaja
