@@ -14,10 +14,16 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.util.Set;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import com.aventstack.extentreports.model.Log;
 
 import gov.mst.automation.ica.elements.LookupWindowElements;
 
@@ -93,6 +99,14 @@ public class CommonActions {
 	{
 		Select s = new Select(DropdownElement); 
 		s.selectByVisibleText(DropdownValue);
+	}
+	
+	
+	//  Method is used to return the text value of an element
+	
+	public static String getElementText(WebElement element)
+	{
+		return element.getText();
 	}
 		
 

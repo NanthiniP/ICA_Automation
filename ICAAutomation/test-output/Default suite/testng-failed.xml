@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="gov.mst.automation.ica.commonutility.Email">
+      <class name="gov.mst.automation.ica.testmodel.Object_101_Test">
         <methods>
-          <include name="EmailVerify"/>
+          <include name="startReport"/>
+          <include name="formValueValidation"/>
         </methods>
-      </class> <!-- gov.mst.automation.ica.commonutility.Email -->
+      </class> <!-- gov.mst.automation.ica.testmodel.Object_101_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

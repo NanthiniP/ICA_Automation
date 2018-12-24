@@ -28,7 +28,7 @@ public class Constants {
 	
 	public static String sfUrl = "https://azica--qadevpro2.cs32.my.salesforce.com/";
 	public static String sfUserName = "divya.k@mstsolutions.com";
-	public static String sfPassword = "welcome123";
+	public static String sfPassword = "123welcome";
 	
 	
 	// Email credentials

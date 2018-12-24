@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 10 15:27:45 IST 2018</td>
+<td>Started on:</td><td>Fri Dec 21 13:38:55 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20728 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1252 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,118 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='gov.mst.automation.ica.commonutility.Email.EmailVerify()'><b>EmailVerify</b><br>Test class: gov.mst.automation.ica.commonutility.Email</td>
+<td title='gov.mst.automation.ica.testmodel.Object_101_Test.openBrowser()'><b>openBrowser</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by @Configuration on method openBrowser but has not been marked @Optional or defined
+in C:\Users\MSTSYS0059\AppData\Local\Temp\testng-eclipse--310170194\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace233021551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233021551'><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by @Configuration on method openBrowser but has not been marked @Optional or defined
+in C:\Users\MSTSYS0059\AppData\Local\Temp\testng-eclipse--310170194\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.Object_101_Test@14bf9759</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.Object_101_Test.checkTestAfterExecution()'><b>checkTestAfterExecution</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test</td>
 <td></td>
-<td>20</td>
-<td>gov.mst.automation.ica.commonutility.Email@1a968a59</td></tr>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.Object_101_Test@14bf9759</td></tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.Object_101_Test.checkTestAfterExecution()'><b>checkTestAfterExecution</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test</td>
+<td></td>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.Object_101_Test@14bf9759</td></tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.Object_101_Test.checkTestAfterExecution()'><b>checkTestAfterExecution</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test</td>
+<td></td>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.Object_101_Test@14bf9759</td></tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.Object_101_Test.closeBrowser()'><b>closeBrowser</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test</td>
+<td></td>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.Object_101_Test@14bf9759</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.Object_101_Test.formValueValidation()'><b>formValueValidation</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test<br>Parameters: TC01, Check whether the values are properly submitted in the Employer Report Form, Ivanjaln, Rakshanya, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, Gracy, 12345, Street, City, State, 98765, 9638520741, 11/25/2018, 11/26/2018, 11/27/2018, 5000, Yes, BoneBroken, Leg, Head - Eyes, Yes, Yes, Yes, Yes, Nothing, Stone, Occupational Disease or Cumulative Injury - Mental Disorder, Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals, Work, Yes, 11/20/2018, 15963, user@mail.com, D:\data.jpg, Thank you for your submission!, IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.</td>
+<td></td>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.Object_101_Test@14bf9759</td></tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.Object_101_Test.formValueValidation()'><b>formValueValidation</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test<br>Parameters: TC02, Check whether the values are properly submitted in the Employer Report Form, Gracy, Suganthini, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, Gracy, 12345, Street, City, State, 98765, 9638520741, 11/25/2018, 11/26/2018, 11/27/2018, 5000, Yes, BoneBroken, Leg, Head - Eyes, Yes, Yes, Yes, Yes, Nothing, Stone, Occupational Disease or Cumulative Injury - Mental Disorder, Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals, Work, Yes, 11/20/2018, 15963, user@mail.com, D:\data.jpg, Thank you for your , IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.</td>
+<td></td>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.Object_101_Test@14bf9759</td></tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.Object_101_Test.formValueValidation()'><b>formValueValidation</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test<br>Parameters: TC03, Check whether the values are properly submitted in the Employer Report Form, Suzana, Charan, 123-12-1234, 11/29/2018, Street, city, State, 12345, 9876543210, Male, Single, Gracy, 12345, Street, City, State, 98765, 9638520741, 11/25/2018, 11/26/2018, 11/27/2018, 5000, Yes, BoneBroken, Leg, Head - Eyes, Yes, Yes, Yes, Yes, Nothing, Stone, Occupational Disease or Cumulative Injury - Mental Disorder, Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals, Work, Yes, 11/20/2018, 15963, user@mail.com, D:\data.jpg, Thank you for your submission!, THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.</td>
+<td></td>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.Object_101_Test@14bf9759</td></tr>
 </table><p>
 </body>
 </html>

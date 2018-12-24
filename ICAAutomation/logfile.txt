@@ -1,0 +1,43 @@
+2018-12-24 16:07:00,152 - INFO - Last name entered
+2018-12-24 16:07:00,417 - INFO - First name entered
+2018-12-24 16:07:00,685 - INFO - Social Security Number entered
+2018-12-24 16:07:00,967 - INFO - Birth date entered
+2018-12-24 16:07:01,176 - INFO - HomeAddress entered
+2018-12-24 16:07:01,344 - INFO - HomeCity entered
+2018-12-24 16:07:01,515 - INFO - HomeState entered
+2018-12-24 16:07:01,708 - INFO - HomeZipCode entered
+2018-12-24 16:07:01,950 - INFO - HomeTelephone entered
+2018-12-24 16:07:02,140 - INFO - Sex entered
+2018-12-24 16:07:02,317 - INFO - MaritalStatus entered
+2018-12-24 16:07:02,513 - INFO - EmployerName entered
+2018-12-24 16:07:02,690 - INFO - FeinNumber entered
+2018-12-24 16:07:02,869 - INFO - OfficeAddress entered
+2018-12-24 16:07:03,020 - INFO - OfficeCity entered
+2018-12-24 16:07:03,206 - INFO - OfficeState entered
+2018-12-24 16:07:03,403 - INFO - OfficeZipCode entered
+2018-12-24 16:07:03,658 - INFO - OfficeTelephone entered
+2018-12-24 16:07:03,916 - INFO - DateOfInjury entered
+2018-12-24 16:07:04,176 - INFO - DateEmployerNotifiedOfInjury entered
+2018-12-24 16:07:04,432 - INFO - LastDayOfWorkAfterInjury entered
+2018-12-24 16:07:04,534 - INFO - employeeReturnedToWorkNo selected
+2018-12-24 16:07:04,714 - INFO - EmployerOccupationWhenInjured entered
+2018-12-24 16:07:04,935 - INFO - injuryOccurOnEmployerPremises entered
+2018-12-24 16:07:05,113 - INFO - WhatWasTheInjury entered
+2018-12-24 16:07:05,268 - INFO - PartOfBodyInjured entered
+2018-12-24 16:07:08,498 - INFO - partOfBodyLookupTable entered
+2018-12-24 16:07:08,725 - INFO - Fatal entered
+2018-12-24 16:07:08,934 - INFO - EmployeeTreatedInEmergencyRoom entered
+2018-12-24 16:07:09,174 - INFO - EmployeeHospitalizedOvernight entered
+2018-12-24 16:07:09,419 - INFO - ValidityOfClaimDoubted entered
+2018-12-24 16:07:09,592 - INFO - WhatHappened entered
+2018-12-24 16:07:09,711 - INFO - SubstanceDirectlyHarmedEmployee entered
+2018-12-24 16:07:12,273 - INFO - NatureOfInjury entered
+2018-12-24 16:07:14,840 - INFO - CauseOfInjury entered
+2018-12-24 16:07:14,968 - INFO - EmployeeDoingJustBeforeIncident entered
+2018-12-24 16:07:15,132 - INFO - WorkerInEmployWhenInjured entered
+2018-12-24 16:07:15,433 - INFO - DateOfLastHire entered
+2018-12-24 16:07:15,643 - INFO - GrossEarningsOfEmployeePreceedingInjury entered
+2018-12-24 16:07:15,928 - INFO - SubmitterEmailAddress entered
+2018-12-24 16:07:25,260 - INFO - UploadFile done
+2018-12-24 16:07:25,400 - INFO - I Agree checked
+2018-12-24 16:07:31,249 - INFO - Submit button clicked

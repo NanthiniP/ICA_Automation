@@ -11,6 +11,8 @@ package gov.mst.automation.ica.testmodel;
 import org.testng.annotations.Test;
 
 import gov.mst.automation.ica.baseclass.BaseTest;
+import gov.mst.automation.ica.commonutility.CommonActions;
+import gov.mst.automation.ica.commonutility.Log;
 import gov.mst.automation.ica.pagemodel.LoginPage;
 
 public class LoginPageTest extends BaseTest{
@@ -23,6 +25,7 @@ public class LoginPageTest extends BaseTest{
 				
 		LoginPage sfloginpage = new LoginPage(driver);
 		sfloginpage.login();
+		Log.info("Login into Salesforce Successfully");
 	}
 
 }

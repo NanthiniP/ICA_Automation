@@ -18,7 +18,6 @@ public class ExcelConstants {
 	//  File Sheets
 	
 	public static String employerReportFormSheet = "EmployerReportForm";
-	
-	
+	public static String	Object_101_FormValueCheck = "101_FormValue";
 
 }

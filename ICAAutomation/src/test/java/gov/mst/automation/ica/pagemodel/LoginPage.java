@@ -26,6 +26,8 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import gov.mst.automation.ica.baseclass.BaseTest;
+import gov.mst.automation.ica.commonutility.CommonActions;
+import gov.mst.automation.ica.commonutility.Log;
 import gov.mst.automation.ica.constant.Constants;
 import gov.mst.automation.ica.elements.LoginPageElements;
 
@@ -49,9 +51,16 @@ public class LoginPage {
 	{
 		loginpage = PageFactory.initElements(driver, LoginPageElements.class);
 		driver.get(Constants.sfUrl);
+		Log.info("URL navigated");
+		
 		loginpage.username.sendKeys(Constants.sfUserName);
+		Log.info("Username entered");
+		
 		loginpage.password.sendKeys(Constants.sfPassword);
+		Log.info("Password entered");
+		
 		loginpage.login.click();
+		Log.info("Login button clicked");
 		
 	}
 	

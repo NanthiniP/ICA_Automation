@@ -9,6 +9,8 @@ package gov.mst.automation.ica.baseclass;
 */ 
 
 import java.io.IOException;
+
+import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -32,6 +34,8 @@ public class BaseTest {
 	public static void startReport() 
 	{
 		Report.initReport();
+		
+		
 	}
 		
 	
