@@ -4,7 +4,7 @@ package gov.mst.automation.ica.commonutility;
 	* Author	 				: Nanthini PushpaRaja
 	* Created date			: Dec 08, 2018
 	* Last Edited by		: Nanthini PushpaRaja
-	* Last Edited date		: Dec 08, 2018
+	* Last Edited date		: Dec 24, 2018
 	* Description			: Class is used to define the validation actions
 */
 
@@ -18,6 +18,7 @@ public class ValidationActions {
 	
 	//	Method is used to compare two elements text value and returns the boolean value
 	
+		
 	public static boolean  textValidation(WebElement element1, WebElement element2) throws Exception
 	{
 		boolean result = false;
