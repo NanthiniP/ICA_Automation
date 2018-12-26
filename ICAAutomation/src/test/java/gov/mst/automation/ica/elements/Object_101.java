@@ -5,7 +5,7 @@ package gov.mst.automation.ica.elements;
 	* Created date			: Dec 15, 2018
 	* Last Edited by		: Nanthini PushpaRaja
 	* Last Edited date		: Dec 24, 2018
-	* Description			: Class is used to define the elements in 101 object in Sales force
+	* Description			: Class is used to define the elements in 101 object in Salesforce
 */ 
 
 import org.openqa.selenium.WebDriver;
@@ -14,26 +14,32 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-
-public class Object_101_Elements {
+public class Object_101 {
 	
-	@FindBy(how = How.XPATH, using = ".//div[@class='bBottom']//child::button/div")
-	public WebElement menuIcon;
+	@FindBy(how = How.XPATH, using = ".//div[@class='bBottom']//child::button")
+	public WebElement appLauncherIcon;
 	
+	@FindBy(how = How.XPATH, using = ".//h2[text()='App Launcher']")
+	public WebElement appLauncherWindow;
+		
 	@FindBy(how = How.XPATH, using = ".//ul//child::span[text()='101']")
 	public WebElement object_101;
 	
+	@FindBy(how = How.XPATH, using = ".//div[@id='brandBand_1']//child::h1//child::span[text()='Recently Viewed']")
+	public WebElement recentlyView;;
+		
 	@FindBy(how = How.XPATH, using = ".//div[@id='brandBand_1']//child::h1//child::a")
 	public WebElement listView;
 	
 	@FindBy(how = How.XPATH, using = ".//div[@class='listContent']//child::span[text()='All']")
 	public WebElement list_All;
 	
-	/*@FindBy(how = How.XPATH, using = ".//div[contains(@class,'listViewContent')]//child::table/tbody/tr[1]/td[4]//a")
+	@FindBy(how = How.XPATH, using = ".//div[contains(@class,'listViewContent')]//child::table/tbody/tr[1]/td[4]//a")
+	public WebElement firstRecord;
+	
+	/*@FindBy(how = How.XPATH, using = ".//div[contains(@class,'forceListViewManagerGrid')]//child::table/tbody/tr[1]//a")
 	public WebElement firstRecord;*/
 	
-	@FindBy(how = How.XPATH, using = ".//div[contains(@class,'forceListViewManagerGrid')]//child::table/tbody/tr[1]//a")
-	public WebElement firstRecord;
 	
 	
 	// EMPLOYEE
@@ -70,6 +76,7 @@ public class Object_101_Elements {
 	
 	@FindBy(how = How.XPATH, using = ".//span[text()='Marital Status']/following::span[1]/child::span")
 	public WebElement maritalStatus;
+	
 	
 	
 	// EMPLOYER
@@ -180,12 +187,12 @@ public class Object_101_Elements {
 	public WebElement submitterEmailAddress;
 	
 	
-	//	Method is used to initialize and returns all the elements in the object 101
+	//	Method is used to initialize and returns all the elements in object_101
 	
-	public static Object_101_Elements elements(WebDriver driver)										
+	public static Object_101 elements(WebDriver driver)										
 	{
-		Object_101_Elements object_101_elements = PageFactory.initElements(driver, Object_101_Elements.class);
-		return object_101_elements;
+		Object_101 elements = PageFactory.initElements(driver, Object_101.class);
+		return elements;
 	}
 	
 	

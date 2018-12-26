@@ -9,11 +9,9 @@ package gov.mst.automation.ica.testmodel;
 */
 
 import org.testng.annotations.Test;
-
 import gov.mst.automation.ica.baseclass.BaseTest;
-import gov.mst.automation.ica.commonutility.CommonActions;
-import gov.mst.automation.ica.commonutility.Log;
-import gov.mst.automation.ica.pagemodel.LoginPage;
+import gov.mst.automation.ica.pagemodel.LoginPageModel;
+import gov.mst.automation.ica.report.Report;
 
 public class LoginPageTest extends BaseTest{
 	
@@ -22,10 +20,12 @@ public class LoginPageTest extends BaseTest{
 	@Test
 	public void loginValidation() throws Exception
 	{
-				
-		LoginPage sfloginpage = new LoginPage(driver);
+		
+		Report.startTest("TC002", "Login", "Nanthini", "Regression");		
+		LoginPageModel sfloginpage = new LoginPageModel(driver);
 		sfloginpage.login();
-		Log.info("Login into Salesforce Successfully");
+		Report.testStepStatus("Login Successful", "Pass", " ");
+		
 	}
 
 }

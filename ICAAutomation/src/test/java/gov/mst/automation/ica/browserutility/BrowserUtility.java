@@ -14,6 +14,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import gov.mst.automation.ica.commonutility.Log;
 import gov.mst.automation.ica.constant.Constants;
 
 public class BrowserUtility {
@@ -38,23 +40,31 @@ public class BrowserUtility {
 		{
 			System.setProperty("webdriver.chrome.driver", Constants.chromePath);
 			driver = new ChromeDriver();
+			Log.info("Browser launched");
+			
 		}
 		else if(browserName.equalsIgnoreCase("ie"))
 		{
 			System.setProperty("webdriver.ie.driver", Constants.iePath);
 			driver = new InternetExplorerDriver();
+			Log.info("Browser launched");
+			
 		}
 		else if(browserName.equalsIgnoreCase("Firefox"))
 		{
 			driver = new FirefoxDriver();
+			Log.info("Browser launched");
+			
 		}
 		else
 		{
+			Log.info("Invalid browser name");
 			throw new Exception("Invalid Browser Name");
 		}
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		Log.info("Implicit wait applied to browser with 20 seconds");
 		return driver;
 	}
 	
@@ -64,6 +74,7 @@ public class BrowserUtility {
 	public void closeBrowser()										
 	{
 		driver.close();
+		Log.info("Browser closed");
 	}
 
 }

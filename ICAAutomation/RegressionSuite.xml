@@ -10,8 +10,7 @@
 	<test thread-count="5" name="Test">
 		<parameter name="browserName" value="chrome"></parameter>
 		<classes>
-		<!-- 	<class	name="gov.mst.automation.ica.testmodel.EmployersReportFormTest" />  -->
-			<class	name="gov.mst.automation.ica.testmodel.Object_101_Test"></class>
+				<class	name="gov.mst.automation.ica.testmodel.Object_101_Test"></class>
 		</classes>
 	</test> <!-- Test -->
 	

@@ -15,7 +15,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class LookupWindowElements {
+public class LookupWindow {
 	
 	
 	//  LOOKUP WINDOW
@@ -33,9 +33,9 @@ public class LookupWindowElements {
 	
 	//	Method is used to initialize all the elements in the Lookup Window and returns all the elements
 	
-	public static LookupWindowElements elements(WebDriver driver)										
+	public static LookupWindow elements(WebDriver driver)										
 	{
-		LookupWindowElements lookupWindow = PageFactory.initElements(driver, LookupWindowElements.class);
+		LookupWindow lookupWindow = PageFactory.initElements(driver, LookupWindow.class);
 		return lookupWindow;
 	}
 	

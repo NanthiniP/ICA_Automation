@@ -10,19 +10,12 @@
     <classes>
       <class name="gov.mst.automation.ica.testmodel.Object_101_Test">
         <methods>
-          <include name="openBrowser"/>
-          <include name="checkTestAfterExecution"/>
-          <include name="formValueValidation" invocation-numbers="0 0 0"/>
-        </methods>
-      </class> <!-- gov.mst.automation.ica.testmodel.Object_101_Test -->
-      <class name="gov.mst.automation.ica.testmodel.EmployersReportFormTest">
-        <methods>
-          <include name="closeBrowser"/>
           <include name="startReport"/>
           <include name="openBrowser"/>
           <include name="checkTestAfterExecution"/>
+          <include name="formValueValidation" invocation-numbers="1 1"/>
         </methods>
-      </class> <!-- gov.mst.automation.ica.testmodel.EmployersReportFormTest -->
+      </class> <!-- gov.mst.automation.ica.testmodel.Object_101_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -23,12 +23,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPageElements {
+public class LoginPage {
 	
 	
 	//	LOGIN
-	
-	
+		
 	@FindBy(how=How.XPATH,using=".//*[@id='username']")
 	public WebElement username;
 	
@@ -38,13 +37,22 @@ public class LoginPageElements {
 	@FindBy(how=How.XPATH,using=".//*[@id='Login']")
 	public WebElement login;
 	
+	@FindBy(how=How.XPATH,using=".//span[text()='Home']")
+	public WebElement homeTab;
+	
+	@FindBy(how=How.XPATH,using=".//header/div[2]//li[9]/button")
+	public WebElement userIcon;
+	
+	@FindBy(how=How.XPATH,using=".//a[text()='Log Out']")
+	public WebElement logOut;
+		
 	
 	//	Method is used to initialize and returns all the elements in the Login Page
 	
-	public static LoginPageElements elements(WebDriver driver)										
+	public static LoginPage elements(WebDriver driver)										
 	{
-		LoginPageElements loginPage = PageFactory.initElements(driver, LoginPageElements.class);
-		return loginPage;
+		LoginPage elements = PageFactory.initElements(driver, LoginPage.class);
+		return elements;
 	}
 	
 

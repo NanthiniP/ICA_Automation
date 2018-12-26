@@ -47,23 +47,32 @@ public class Email {
 			Session session = Session.getInstance(props, null);
 			Store store = session.getStore();
 			store.connect(Constants.hostname, Constants.username, Constants.password);
-			
+			Log.info("Connected to email");
 			
 			// Get the recently received unread mail and get the From and Subject
 			
 			Folder inbox = store.getFolder("INBOX");
 			inbox.open(Folder.READ_WRITE);
+			Log.info("Opened the inbox folder");
+			
 			int count = inbox.getUnreadMessageCount();
+			Log.info("Got all the unread messages");
+			
 			if (count > 0) 
 			{
 
 				int totalCount = inbox.getMessageCount();
+				Log.info("Got all the messages from inbox");
 				
 				for (int i = 0; i < count; i++) 
 				{
 					int countEmail = totalCount - i;
+					Log.info("First email got selected");
+					
 					Message msg = inbox.getMessage(countEmail);
 					msg.setFlag(Flags.Flag.SEEN, true);
+					Log.info("Marked as read email");
+					
 					Address[] in = msg.getFrom();
 					
 					for (Address address : in) 
@@ -71,7 +80,7 @@ public class Email {
 						from_email = address.toString();
 						subject_email = msg.getSubject();
 					}
-					
+					Log.info("Got from address and subject");
 					
 					// Get the content of Email
 					
@@ -90,17 +99,19 @@ public class Email {
 					}
 					String parsed_content = Jsoup.parse(content_email).text();
 					
+					Log.info("Got the content of email");
 					
 					// Check whether From, Subject and Content of email are as per the expectation
 					
 					if (from.equals(from_email)) 
 					{
-
+						Log.info("From email address is as expected");
 						if (subject_email.contains(subject)) 
 						{
-
+							Log.info("Subject is as expected");
 							if (parsed_content.contains(content)) 
 							{
+								Log.info("Content is as expected");
 								System.out.println("Email verified");
 								i = count;
 							} 

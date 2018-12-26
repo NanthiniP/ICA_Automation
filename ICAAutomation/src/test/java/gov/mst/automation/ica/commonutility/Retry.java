@@ -14,7 +14,7 @@ import org.testng.ITestResult;
 public class Retry implements IRetryAnalyzer{
 	
 	private int retryCount = 0;
-    private int maxRetryCount = 2;
+    private int maxRetryCount = 1;
         
     // Method is used to execute the failed test cases for number of times
     

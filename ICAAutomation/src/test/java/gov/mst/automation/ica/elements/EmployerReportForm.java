@@ -5,7 +5,7 @@ package gov.mst.automation.ica.elements;
  	* Created date			: Nov 26, 2018
  	* Last Edited by		: Nanthini PushpaRaja
  	* Last Edited date		: Dec 08, 2018
- 	* Description			: Class is used to define elements in the Employer Report Form
+ 	* Description			: Class is used to define the elements in the Employer Report Form
  */ 
 
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class EmployerReportFormElements {
+public class EmployerReportForm {
 	  
 																				
 	//	EMPLOYEE			
@@ -176,19 +176,8 @@ public class EmployerReportFormElements {
 	
 	@FindBy(how = How.XPATH , using = ".//h3[text()='AUTHORIZED SIGNATURE']//following::input[@type='submit']")
 	public WebElement submit;
-	
-	
 		
-	//	SUBMISSION PAGE
-	
-	
-	@FindBy(how = How.XPATH , using = ".//p[text()=' Thank you for your submission!']")
-	public WebElement thankYou;
-	
-	@FindBy(how = How.XPATH , using = ".//p[text()=' Thank you for your submission!']//following::td[2]")
-	public WebElement importantNote;
-	
-	
+		
 	// EROR MESSAGE
 	
 	@FindBy(how = How.XPATH , using = ".//ul[@role='alert']/li[1]")
@@ -197,10 +186,10 @@ public class EmployerReportFormElements {
 	
 	//	Method is used to initialize and returns all the elements in the Employer Report Form
 	
-	public static EmployerReportFormElements elements(WebDriver driver)										
+	public static EmployerReportForm elements(WebDriver driver)										
 	{
-		EmployerReportFormElements employerreport = PageFactory.initElements(driver, EmployerReportFormElements.class);
-		return employerreport;
+		EmployerReportForm elements = PageFactory.initElements(driver, EmployerReportForm.class);
+		return elements;
 	}
 
 	
