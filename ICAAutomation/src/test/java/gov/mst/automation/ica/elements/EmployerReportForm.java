@@ -1,5 +1,7 @@
 package gov.mst.automation.ica.elements;
 
+import java.util.List;
+
 /*
  	* Author	 				: Nanthini PushpaRaja
  	* Created date			: Nov 26, 2018
@@ -61,22 +63,22 @@ public class EmployerReportForm {
 	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),\"EMPLOYER'S NAME\")]/following::input[1]")
 	public WebElement employerName;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),\"FEIN NUMBER\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),'FEIN NUMBER')]/following::input[1]")
 	public WebElement feinNumber;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),\"OFFICE ADDRESS\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),'OFFICE ADDRESS')]/following::input[1]")
 	public WebElement officeAddress;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),\"CITY\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),'CITY')]/following::input[1]")
 	public WebElement officeCity;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),\"STATE\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),'STATE')]/following::input[1]")
 	public WebElement officeState;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),\"ZIP CODE\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),'ZIP CODE')]/following::input[1]")
 	public WebElement officeZipcode;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),\"TELEPHONE\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYER']//following::label[contains(text(),'TELEPHONE')]/following::input[1]")
 	public WebElement officeTelephone;
 	
 	
@@ -84,28 +86,28 @@ public class EmployerReportForm {
 	//	ACCIDENT DETAILS
 	
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),\"DATE OF INJURY\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'DATE OF INJURY')]/following::input[1]")
 	public WebElement dateOfInjury;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),\"DATE EMPLOYER NOTIFIED OF INJURY\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'DATE EMPLOYER NOTIFIED OF INJURY')]/following::input[1]")
 	public WebElement dateEmployerNotifiedofInjury;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),\"LAST DAY OF WORK AFTER INJURY\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'LAST DAY OF WORK AFTER INJURY')]/following::input[1]")
 	public WebElement lastDayOfWorkAfterInjury;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),\"EMPLOYEE RETURNED TO WORK\")]/following::input[@value='True']")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'EMPLOYEE RETURNED TO WORK')]/following::input[@value='True']")
 	public WebElement employeeReturnedToWorkYes;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),\"EMPLOYEE RETURNED TO WORK\")]/following::input[@value='False']")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'EMPLOYEE RETURNED TO WORK')]/following::input[@value='False']")
 	public WebElement employeeReturnedToWorkNo;
 		
-	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),\"EMPLOYEE'S OCCUPATION\")]/following::input[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'JOB TITLE')]/following::input[1]")
 	public WebElement employeeOccupation;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),\"INJURY OCCUR ON EMPLOYER PREMISES\")]/following::select[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'INJURY OCCUR ON EMPLOYER PREMISES')]/following::select[1]")
 	public WebElement injuryOccurOnEmployerPremises;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),\"WHAT WAS THE INJURY\")]/following::textarea[1]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'WHAT WAS THE INJURY')]/following::textarea[1]")
 	public WebElement whatWasTheInjury;
 	
 	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'PART OF BODY INJURED')]/following::input[1]")
@@ -113,6 +115,9 @@ public class EmployerReportForm {
 	
 	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'PART OF BODY INJURED')]/following::img[@class='lookupIcon']")
 	public WebElement partOfBodyLookupTable;
+	
+	@FindBy(how = How.LINK_TEXT , using = "Part of Body Injured List")
+	public WebElement partOfBodyLink;	
 	
 	@FindBy(how = How.XPATH , using = ".//h3[text()='ACCIDENT DETAILS']//following::label[contains(text(),'FATAL')]/following::select[1]")
 	public WebElement fatal;
@@ -127,7 +132,6 @@ public class EmployerReportForm {
 	public WebElement validityOfClaimDoubted;
 	
 	
-	
 	//	CAUSE OF ACCIDENT
 	
 	
@@ -137,10 +141,10 @@ public class EmployerReportForm {
 	@FindBy(how = How.XPATH , using = ".//h3[text()='CAUSE OF ACCIDENT']//following::label[contains(text(),'SUBSTANCE DIRECTLY HARMED')]/following::textarea[1]")
 	public WebElement substanceHarmedTheEmployee;	
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='CAUSE OF ACCIDENT']//following::label[contains(text(),'NATURE OF INJURY')]/following::img[@class=\"lookupIcon\"]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='CAUSE OF ACCIDENT']//following::label[contains(text(),'NATURE OF INJURY')]/following::img[@class='lookupIcon']")
 	public WebElement natureOfInjuryLookup;
 	
-	@FindBy(how = How.XPATH , using = ".//h3[text()='CAUSE OF ACCIDENT']//following::label[contains(text(),'CAUSE OF INJURY')]/following::img[@class=\"lookupIcon\"]")
+	@FindBy(how = How.XPATH , using = ".//h3[text()='CAUSE OF ACCIDENT']//following::label[contains(text(),'CAUSE OF INJURY')]/following::img[@class='lookupIcon']")
 	public WebElement causeOfInjuryLookup;
 	
 	@FindBy(how = How.XPATH , using = ".//h3[text()='CAUSE OF ACCIDENT']//following::label[contains(text(),'DOING JUST BEFORE THE INCIDENT')]/following::textarea[1]")
@@ -180,8 +184,17 @@ public class EmployerReportForm {
 		
 	// EROR MESSAGE
 	
-	@FindBy(how = How.XPATH , using = ".//ul[@role='alert']/li[1]")
-	public WebElement ErrorMessageList;
+	@FindBy(how = How.XPATH , using = ".//h3[text()='EMPLOYEE']//following::label[contains(text(),'LAST NAME')]/following::div[@class='errorMsg']")
+	public WebElement lastNameRequiredFieldError;
+	
+	
+	//Links
+	@FindBy(how = How.TAG_NAME , using = "a")
+	public List<WebElement> links;
+	
+	@FindBy(how = How.XPATH , using = ".//table/tbody/tr")
+	public List<WebElement> tableItems;
+	
 	
 	
 	//	Method is used to initialize and returns all the elements in the Employer Report Form

@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="gov.mst.automation.ica.testmodel.Object_101_Test">
+      <class name="gov.mst.automation.ica.pagemodel.EmployersReportFormModel">
         <methods>
-          <include name="startReport"/>
-          <include name="formValueValidation"/>
+          <include name="requiredFieldValidation"/>
         </methods>
-      </class> <!-- gov.mst.automation.ica.testmodel.Object_101_Test -->
+      </class> <!-- gov.mst.automation.ica.pagemodel.EmployersReportFormModel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

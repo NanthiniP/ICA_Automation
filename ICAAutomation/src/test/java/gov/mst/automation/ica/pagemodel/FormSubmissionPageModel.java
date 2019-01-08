@@ -9,9 +9,10 @@ package gov.mst.automation.ica.pagemodel;
 */
 
 import org.openqa.selenium.WebDriver;
-import gov.mst.automation.ica.commonutility.Log;
+
 import gov.mst.automation.ica.commonutility.ValidationActions;
 import gov.mst.automation.ica.elements.FormSubmissionPage;
+import gov.mst.automation.ica.report.Log;
 import gov.mst.automation.ica.report.Report;
 
 public class FormSubmissionPageModel {

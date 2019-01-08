@@ -11,6 +11,8 @@ package gov.mst.automation.ica.commonutility;
 import org.openqa.selenium.WebElement;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+
+import gov.mst.automation.ica.report.Log;
 import gov.mst.automation.ica.report.Report;
 
 public class ValidationActions {

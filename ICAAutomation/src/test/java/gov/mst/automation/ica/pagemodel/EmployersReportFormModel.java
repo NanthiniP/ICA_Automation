@@ -1,9 +1,5 @@
 package gov.mst.automation.ica.pagemodel;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.PropertyConfigurator;
-import org.apache.log4j.xml.DOMConfigurator;
-
 /*
 	* Author	 				: Nanthini PushpaRaja
 	* Created date			: Nov 26, 2018
@@ -15,10 +11,13 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import gov.mst.automation.ica.commonutility.CommonActions;
-import gov.mst.automation.ica.commonutility.Log;
+import gov.mst.automation.ica.commonutility.ValidationActions;
 import gov.mst.automation.ica.constant.Constants;
 import gov.mst.automation.ica.elements.EmployerReportForm;
+import gov.mst.automation.ica.report.Log;
 import gov.mst.automation.ica.report.Report;
+import java.util.Set;
+import org.openqa.selenium.By;
 
 public class EmployersReportFormModel  {
 		
@@ -46,7 +45,7 @@ public class EmployersReportFormModel  {
 
 			// Employee
 			
-						
+			
 			employerReportForm.lastName.sendKeys(LastName);
 			Log.info("Last name entered");
 
@@ -109,14 +108,16 @@ public class EmployersReportFormModel  {
 			// Accident Details
 
 			
-			employerReportForm.dateOfInjury.sendKeys(DateOfInjury);
+		   employerReportForm.dateOfInjury.sendKeys(DateOfInjury);
 			Log.info("DateOfInjury entered");
-
-			employerReportForm.dateEmployerNotifiedofInjury.sendKeys(DateEmployerNotifiedOfInjury);
+			
+			 employerReportForm.dateEmployerNotifiedofInjury.sendKeys(DateEmployerNotifiedOfInjury);
 			Log.info("DateEmployerNotifiedOfInjury entered");
 
 			employerReportForm.lastDayOfWorkAfterInjury.sendKeys(LastDayOfWorkAfterInjury);
 			Log.info("LastDayOfWorkAfterInjury entered");
+			
+			CommonActions.pressEscape();
 
 			employerReportForm.employeeReturnedToWorkNo.click();
 			Log.info("employeeReturnedToWorkNo selected");
@@ -214,4 +215,80 @@ public class EmployersReportFormModel  {
 	}
 	
 	
+	// Method is used to check the items on click "ParOfBody link
+	
+	public void links(String item1, String item2,  String item3, String item4, String item5, String item6, String item7, String item8, String item9, String item10, String item11, String item12) throws Exception
+	{
+		driver.get(Constants.empoyersReportFormUrl);
+		employerReportForm.partOfBodyLink.click();
+		Log.info("Part Of Body link clicked");
+		
+		String currentWindow = driver.getWindowHandle();
+
+		Set<String> windows = driver.getWindowHandles();
+		Log.info("Get all the browser windows");
+
+		for (String window : windows) {
+
+			if (!(window.equals(currentWindow))) {
+
+				driver.switchTo().window(window);
+				Log.info("Tab to next window");
+
+				int totalitems = employerReportForm.tableItems.size();
+				Log.info("Got all the table items");
+
+				String item[] = { item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11,
+						item12 };
+
+				for (int n = 1; n < totalitems; n++) {
+					String actual = driver.findElement(By.xpath(".//table//tr[" + n + "]/td[1]/span")).getText();
+					String expected = item[n - 1];
+
+					if (actual.equals(expected)) {
+						Report.testStepStatus("Both items are same", "Pass", "");
+						Log.info("Values same");
+					} else {
+						Report.testStepStatus("Items difered", "Fail",
+								"Expected : " + expected + "  Actual : " + actual);
+						Log.info("Vales not same");
+					}
+
+				}
+
+				driver.close();
+
+				break;
+			}
+
+		}
+
+		driver.switchTo().window(currentWindow);
+
+	}
+	
+	
+	// Method is used to check the error message for mandatory field
+	
+	public void requiredFieldValidation() throws Exception
+	{
+		
+		driver.get(Constants.empoyersReportFormUrl);
+		Log.info("Url navigated");
+		
+		employerReportForm.submit.click();
+		Log.info("Submit button clicked");
+		
+		String actual = employerReportForm.lastNameRequiredFieldError.getText();
+		Log.info("Got the actual text");
+		
+		String expected = "Error: You must enter a value";
+		
+		ValidationActions.textValidation(actual, expected);
+		Log.info("Validation done");
+		
+		Report.testStepStatus("Showing error to enter the value in mandatory field", "Pass", "");
+		
+	}
+
 }

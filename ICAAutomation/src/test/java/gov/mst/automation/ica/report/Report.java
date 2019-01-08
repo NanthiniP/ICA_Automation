@@ -126,8 +126,8 @@ public class Report {
 	
 	public static void logScreenshot(WebDriver screenDriver, String testCaseName, String res) throws IOException {
 		File file = ((TakesScreenshot) screenDriver).getScreenshotAs(OutputType.FILE);
-		String workspace = ((new File(".").getAbsolutePath()).replace("\\", "/")).replace(".", "");
-		String fileName = workspace + "/" + testCaseName + ".jpg";
+		String location = "C:\\Users\\MSTSYS0059\\git\\ICA\\ICAAutomation\\src\\test\\resources\\Screenshots";
+		String fileName = location + "/" + testCaseName + ".jpg";
 		FileUtils.copyFile(file, new File(fileName));
 		childTest.fail(res.toString());
 		childTest.fail("Attached screen shot").addScreenCaptureFromPath(testCaseName + ".jpg");

@@ -1,4 +1,4 @@
-package gov.mst.automation.ica.commonutility;
+package gov.mst.automation.ica.email;
 
 /*
  	* Author	 				: Nanthini PushpaRaja
@@ -19,7 +19,9 @@ import javax.mail.Session;
 import javax.mail.Store;
 import org.jsoup.Jsoup;
 import org.testng.annotations.Test;
+
 import gov.mst.automation.ica.constant.Constants;
+import gov.mst.automation.ica.report.Log;
 
 public class Email {
 

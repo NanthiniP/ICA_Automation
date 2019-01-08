@@ -1,4 +1,4 @@
-package gov.mst.automation.ica.commonutility;
+package gov.mst.automation.ica.report;
 
 /*
 	* Author	 				: Nanthini PushpaRaja
@@ -16,7 +16,6 @@ public class Log {
 	 static Logger Log = Logger.getLogger(Log.class.getName());
 	 
 	 
-	 
 	 // This is to print log for the beginning of the test case, as we usually run so many test cases as a test suite
 	 
 	 public static void startTestCase(String sTestCaseName){
@@ -28,8 +27,7 @@ public class Log {
 		Log.info("****************************************************************************************");
 		 
 	}
-	 
-	 
+	 	 
 	 
 	//This is to print log for the ending of the test case
 	 
@@ -44,8 +42,7 @@ public class Log {
 	 	Log.info(" ");
 	 		 		 
 	}
-	 
-	 
+	 	 
 	 
 	// Need to create these methods, so that they can be called  
 	 

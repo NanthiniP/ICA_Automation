@@ -21,6 +21,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import gov.mst.automation.ica.elements.LookupWindow;
+import gov.mst.automation.ica.report.Log;
 
 public class CommonActions {
 			
@@ -54,7 +55,7 @@ public class CommonActions {
 	}
 	
 	
-	
+		
 	// Method is used to search and select a value from lookup window
 	
 	public static void lookup(WebDriver driver, WebElement lookupField, String lookupvalue)
@@ -116,8 +117,8 @@ public class CommonActions {
 			}
 		}
 	}
-	
-	
+
+		
 	
 	// Method is used to select a value from Drop down
 	
@@ -128,14 +129,26 @@ public class CommonActions {
 		Log.info("Value selected from dropdown");
 	}
 	
+	
 	// Method is used to wait until the element visibility
 	
-			public static void wait(WebDriver driver, WebElement element)
-			{
-				WebDriverWait wait = new WebDriverWait(driver, 120);
-				wait.until(ExpectedConditions.visibilityOf(element));
-				Log.info("wait completed for 120 seconds");
-			}
-		
+	public static void wait(WebDriver driver, WebElement element)
+	{
+			WebDriverWait wait = new WebDriverWait(driver, 120);
+			wait.until(ExpectedConditions.visibilityOf(element));
+			Log.info("wait completed for 120 seconds");
+	}
+	
+			
+	// Method is used to press the escape button
+			
+	public static void pressEscape() throws AWTException, InterruptedException
+	{
+		Robot robot = new Robot();
+		Thread.sleep(1000);
+		robot.keyPress(KeyEvent.VK_ESCAPE);
+		Thread.sleep(1000);
+		robot.keyRelease(KeyEvent.VK_ESCAPE);
+	}
 
 }

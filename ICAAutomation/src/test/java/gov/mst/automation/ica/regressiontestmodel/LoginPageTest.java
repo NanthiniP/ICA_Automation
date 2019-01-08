@@ -1,4 +1,4 @@
-package gov.mst.automation.ica.testmodel;
+package gov.mst.automation.ica.regressiontestmodel;
 
 /*
 	* Author	 				: Nanthini PushpaRaja

@@ -15,8 +15,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import gov.mst.automation.ica.commonutility.Log;
 import gov.mst.automation.ica.constant.Constants;
+import gov.mst.automation.ica.report.Log;
 
 public class BrowserUtility {
 	

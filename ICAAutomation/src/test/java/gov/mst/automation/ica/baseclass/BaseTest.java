@@ -9,6 +9,8 @@ package gov.mst.automation.ica.baseclass;
 */ 
 
 import java.io.IOException;
+
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -16,9 +18,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import gov.mst.automation.ica.browserutility.BrowserUtility;
+import gov.mst.automation.ica.email.EmailReport;
 import gov.mst.automation.ica.report.Report;
 
 public class BaseTest {
@@ -32,16 +36,15 @@ public class BaseTest {
 	@BeforeSuite													
 	public static void startReport() 
 	{
-		DOMConfigurator.configure("log4j.xml");
+		PropertyConfigurator.configure("log4j.properties");
 		Report.initReport();
-			
 	}
 		
 	
 	//  Browser will be launched at the beginning of every test class
 	
 	@Parameters("browserName")							
-	@BeforeClass()
+	@BeforeMethod()
 	public void openBrowser(String browserName) throws Exception
 	{
 		browser = new BrowserUtility(browserName);
@@ -50,29 +53,22 @@ public class BaseTest {
 	}
 		
 	
-	//After executing every test, the result will be updated in report for the test
+	//After executing every test, browser will be closed and the result will be updated in report for the test
 	
 	@AfterMethod                            					
 	public void checkTestAfterExecution(ITestResult result) throws IOException
 	{
+		browser.closeBrowser();
 		Report.checkTestAfterExecution(result, driver);
 	}
 	
-	
-	//	Browser will be closed at the end of every test class
-	
-	@AfterClass														
-	public void closeBrowser()
-	{
-		browser.closeBrowser();
-	}
-	
-	
+		
 	//	Report will be created at the end of test case execution
 	
 	@AfterSuite												
 	public static void tearDown() {
 		Report.closeReport();
+		EmailReport.send_report();
 	}
 	
 	

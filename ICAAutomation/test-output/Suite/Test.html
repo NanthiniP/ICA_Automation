@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 26 07:42:23 IST 2018</td>
+<td>Started on:</td><td>Mon Jan 07 11:32:05 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>200 seconds (200813 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16506 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,23 +67,152 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='gov.mst.automation.ica.testmodel.Object_101_Test.formValueValidation()'><b>formValueValidation</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test<br>Parameters: TC01, Check whether the values are properly mapped from Employer Report form to 101 object in salesforce, Ivanjaln, Rakshanya, 123-12-1234, 11/29/2018, Street one, city one, State one, 12345, 9876543210, Male, Single, Gracy, 12,345, Office Street one, Office City one, Office State one, 98765, 9638520741, 11/25/2018, 11/26/2018, 11/27/2018, 5000, Yes, BoneBroken, Leg, Head - Eyes, Yes, Yes, Yes, Yes, Accident, Stone, Occupational Disease or Cumulative Injury - Mental Disorder, Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals, Work, Yes, 11/20/2018, $15,963.00, user@mail.com, D:\data.jpg, Thank you for your submission!, IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.</td>
-<td></td>
-<td>109</td>
-<td>gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8</td></tr>
+<td title='gov.mst.automation.ica.testmodel.EmployersReportFormTest.checkTestAfterExecution()'><b>checkTestAfterExecution</b><br>Test class: gov.mst.automation.ica.testmodel.EmployersReportFormTest<br>Parameters: [TestResult name=linksTest status=FAILURE method=EmployersReportFormTest.linksTest()[pri:2, instance:gov.mst.automation.ica.testmodel.EmployersReportFormTest@4cf777e8] output={null}]</td>
+<td><div><pre>java.lang.NullPointerException
+	at gov.mst.automation.ica.report.Report.checkTestAfterExecution(Report.java:108)
+	at gov.mst.automation.ica.baseclass.BaseTest.checkTestAfterExecution(BaseTest.java:58)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1063737662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1063737662'><pre>java.lang.NullPointerException
+	at gov.mst.automation.ica.report.Report.checkTestAfterExecution(Report.java:108)
+	at gov.mst.automation.ica.baseclass.BaseTest.checkTestAfterExecution(BaseTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.EmployersReportFormTest@4cf777e8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='gov.mst.automation.ica.testmodel.Object_101_Test.formValueValidation()'><b>formValueValidation</b><br>Test class: gov.mst.automation.ica.testmodel.Object_101_Test<br>Parameters: TC02, Check whether the values are properly mapped from Employer Report form to 101 object in salesforce, Charan, Suzana, 567-78-7896, 12/29/2018, Street two, city two, State two, 56789, 1234569870, Female, Married, Chezhiyan, 56,789, Office Street two, Office City two, Office State two, 12345, 9876589878, 12/25/2018, 12/26/2018, 12/27/2018, 8000, No, Head, Head top, Head - Eyes, Yes, Yes, Yes, Yes, Accident, Stone, Occupational Disease or Cumulative Injury - Mental Disorder, Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals, Work, Yes, 11/20/2018, $15,963.00, user@mail.com, D:\data.jpg, Thank you for your submission!, IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.</td>
+<td title='gov.mst.automation.ica.testmodel.EmployersReportFormTest.closeBrowser()'><b>closeBrowser</b><br>Test class: gov.mst.automation.ica.testmodel.EmployersReportFormTest</td>
 <td></td>
-<td>85</td>
-<td>gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8</td></tr>
+<td>0</td>
+<td>gov.mst.automation.ica.testmodel.EmployersReportFormTest@4cf777e8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.EmployersReportFormTest.linksTest()'><b>linksTest</b><br>Test class: gov.mst.automation.ica.testmodel.EmployersReportFormTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at gov.mst.automation.ica.report.Report.testStepStatus(Report.java:72)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.linksTest(EmployersReportFormTest.java:83)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1025797795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1025797795'><pre>java.lang.NullPointerException
+	at gov.mst.automation.ica.report.Report.testStepStatus(Report.java:72)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.linksTest(EmployersReportFormTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:963)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>gov.mst.automation.ica.testmodel.EmployersReportFormTest@4cf777e8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gov.mst.automation.ica.testmodel.EmployersReportFormTest.linksTest()'><b>linksTest</b><br>Test class: gov.mst.automation.ica.testmodel.EmployersReportFormTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at gov.mst.automation.ica.report.Report.testStepStatus(Report.java:72)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.linksTest(EmployersReportFormTest.java:83)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace552937500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace552937500'><pre>java.lang.NullPointerException
+	at gov.mst.automation.ica.report.Report.testStepStatus(Report.java:72)
+	at gov.mst.automation.ica.testmodel.EmployersReportFormTest.linksTest(EmployersReportFormTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>gov.mst.automation.ica.testmodel.EmployersReportFormTest@4cf777e8</td></tr>
 </table><p>
 </body>
 </html>

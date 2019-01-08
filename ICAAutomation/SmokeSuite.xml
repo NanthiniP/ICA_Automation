@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="SmokeSuite" parallel = "tests">
 
 	<listeners>
-		<listener
-			class-name="gov.mst.automation.ica.commonutility.RetryListener" />
+		<listener class-name="gov.mst.automation.ica.retrylistener.RetryListener" />
 	</listeners>
 	
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="ChromeTest">
 		<parameter name="browserName" value="chrome"></parameter>
 		<classes>
-			<class	name="gov.mst.automation.ica.testmodel.EmployersReportFormTest" /> 
+			<class	name="gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest" /> 
 		</classes>
 	</test> <!-- Test -->
+	
+	
+	 <test thread-count="5" name="FirefoxTest">
+		<parameter name="browserName" value="firefox"></parameter>
+		<classes>
+			<class	name="gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest" /> 
+		</classes>
+	</test> 
 	
 </suite> <!-- Suite -->

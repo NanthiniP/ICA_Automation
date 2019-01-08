@@ -11,10 +11,11 @@ package gov.mst.automation.ica.pagemodel;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import gov.mst.automation.ica.commonutility.Log;
+
 import gov.mst.automation.ica.commonutility.ValidationActions;
 import gov.mst.automation.ica.constant.Constants;
 import gov.mst.automation.ica.elements.LoginPage;
+import gov.mst.automation.ica.report.Log;
 import gov.mst.automation.ica.report.Report;
 
 public class LoginPageModel {

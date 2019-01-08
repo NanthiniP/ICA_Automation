@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="200813" started-at="2018-12-26T02:12:23Z" finished-at="2018-12-26T02:15:44Z">
+  <suite name="SmokeSuite" duration-ms="55238" started-at="2019-01-08T04:48:32Z" finished-at="2019-01-08T04:49:27Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="200813" started-at="2018-12-26T02:12:23Z" finished-at="2018-12-26T02:15:44Z">
-      <class name="gov.mst.automation.ica.testmodel.Object_101_Test">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8]" name="startReport" is-config="true" duration-ms="477" started-at="2018-12-26T07:42:23Z" finished-at="2018-12-26T07:42:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8]" name="openBrowser" is-config="true" duration-ms="4656" started-at="2018-12-26T07:42:23Z" finished-at="2018-12-26T07:42:28Z">
+    <test name="ChromeTest" duration-ms="31161" started-at="2019-01-08T04:48:32Z" finished-at="2019-01-08T04:49:03Z">
+      <class name="gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@59ec2012]" name="openBrowser" is-config="true" duration-ms="4948" started-at="2019-01-08T10:18:33Z" finished-at="2019-01-08T10:18:38Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="formValueValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8]" name="formValueValidation" duration-ms="109355" started-at="2018-12-26T07:42:29Z" data-provider="formValueValidation" finished-at="2018-12-26T07:44:18Z">
+        <test-method status="PASS" signature="PartOfBodylinkTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@59ec2012]" name="PartOfBodylinkTest" duration-ms="9680" started-at="2019-01-08T10:18:38Z" data-provider="PartOfBodylinkTest" finished-at="2019-01-08T10:18:48Z">
           <params>
             <param index="0">
               <value>
@@ -31,480 +27,247 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Check whether the values are properly mapped from Employer Report form to 101 object in salesforce]]>
+                <![CDATA[Check whether the given values are available in Part of Body table]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Ivanjaln]]>
+                <![CDATA[Head - Multiple Head Injury]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Rakshanya]]>
+                <![CDATA[Head - Skull]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[123-12-1234]]>
+                <![CDATA[Head - Brain]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[11/29/2018]]>
+                <![CDATA[Head - Ear(s)]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Street one]]>
+                <![CDATA[Head - Eyes]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[city one]]>
+                <![CDATA[Head - Nose]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[State one]]>
+                <![CDATA[Head - Teeth]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[12345]]>
+                <![CDATA[Head - Mouth]]>
               </value>
             </param>
             <param index="10">
               <value>
-                <![CDATA[9876543210]]>
+                <![CDATA[Head - Soft Tissue]]>
               </value>
             </param>
             <param index="11">
               <value>
-                <![CDATA[Male]]>
+                <![CDATA[Head - Facial Bones]]>
               </value>
             </param>
             <param index="12">
               <value>
-                <![CDATA[Single]]>
+                <![CDATA[Head - Multiple Neck Injury]]>
               </value>
             </param>
             <param index="13">
               <value>
-                <![CDATA[Gracy]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[12,345]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Office Street one]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[Office City one]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[Office State one]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[98765]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[9638520741]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[11/25/2018]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[11/26/2018]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[11/27/2018]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[5000]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[BoneBroken]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[Leg]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[Head - Eyes]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[Accident]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[Stone]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[Occupational Disease or Cumulative Injury - Mental Disorder]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals]]>
-              </value>
-            </param>
-            <param index="36">
-              <value>
-                <![CDATA[Work]]>
-              </value>
-            </param>
-            <param index="37">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="38">
-              <value>
-                <![CDATA[11/20/2018]]>
-              </value>
-            </param>
-            <param index="39">
-              <value>
-                <![CDATA[$15,963.00]]>
-              </value>
-            </param>
-            <param index="40">
-              <value>
-                <![CDATA[user@mail.com]]>
-              </value>
-            </param>
-            <param index="41">
-              <value>
-                <![CDATA[D:\data.jpg]]>
-              </value>
-            </param>
-            <param index="42">
-              <value>
-                <![CDATA[Thank you for your submission!]]>
-              </value>
-            </param>
-            <param index="43">
-              <value>
-                <![CDATA[IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.]]>
+                <![CDATA[Head - Vertebrae]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- formValueValidation -->
-        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8]" name="checkTestAfterExecution" is-config="true" duration-ms="5" started-at="2018-12-26T07:44:18Z" finished-at="2018-12-26T07:44:18Z">
+        </test-method> <!-- PartOfBodylinkTest -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@59ec2012]" name="checkTestAfterExecution" is-config="true" duration-ms="2466" started-at="2019-01-08T10:18:48Z" finished-at="2019-01-08T10:18:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=formValueValidation status=SUCCESS method=Object_101_Test.formValueValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8] output={null}]]]>
+                <![CDATA[[TestResult name=PartOfBodylinkTest status=SUCCESS method=EmployersReportFormTest.PartOfBodylinkTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@59ec2012] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestAfterExecution -->
-        <test-method status="PASS" signature="formValueValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8]" name="formValueValidation" duration-ms="85641" started-at="2018-12-26T07:44:18Z" data-provider="formValueValidation" finished-at="2018-12-26T07:45:44Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@59ec2012]" name="openBrowser" is-config="true" duration-ms="3525" started-at="2019-01-08T10:18:50Z" finished-at="2019-01-08T10:18:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TC02]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="RequiredFieldValidation()[pri:3, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@59ec2012]" name="RequiredFieldValidation" duration-ms="9138" started-at="2019-01-08T10:18:54Z" finished-at="2019-01-08T10:19:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RequiredFieldValidation -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@59ec2012]" name="checkTestAfterExecution" is-config="true" duration-ms="271" started-at="2019-01-08T10:19:03Z" finished-at="2019-01-08T10:19:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RequiredFieldValidation status=SUCCESS method=EmployersReportFormTest.RequiredFieldValidation()[pri:3, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@59ec2012] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestAfterExecution -->
+      </class> <!-- gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="55238" started-at="2019-01-08T04:48:32Z" finished-at="2019-01-08T04:49:27Z">
+      <class name="gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6]" name="startReport" is-config="true" duration-ms="335" started-at="2019-01-08T10:18:32Z" finished-at="2019-01-08T10:18:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6]" name="openBrowser" is-config="true" duration-ms="13996" started-at="2019-01-08T10:18:33Z" finished-at="2019-01-08T10:18:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="PartOfBodylinkTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6]" name="PartOfBodylinkTest" duration-ms="17947" started-at="2019-01-08T10:18:47Z" data-provider="PartOfBodylinkTest" finished-at="2019-01-08T10:19:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Check whether the values are properly mapped from Employer Report form to 101 object in salesforce]]>
+                <![CDATA[Check whether the given values are available in Part of Body table]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Charan]]>
+                <![CDATA[Head - Multiple Head Injury]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Suzana]]>
+                <![CDATA[Head - Skull]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[567-78-7896]]>
+                <![CDATA[Head - Brain]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[12/29/2018]]>
+                <![CDATA[Head - Ear(s)]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Street two]]>
+                <![CDATA[Head - Eyes]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[city two]]>
+                <![CDATA[Head - Nose]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[State two]]>
+                <![CDATA[Head - Teeth]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[56789]]>
+                <![CDATA[Head - Mouth]]>
               </value>
             </param>
             <param index="10">
               <value>
-                <![CDATA[1234569870]]>
+                <![CDATA[Head - Soft Tissue]]>
               </value>
             </param>
             <param index="11">
               <value>
-                <![CDATA[Female]]>
+                <![CDATA[Head - Facial Bones]]>
               </value>
             </param>
             <param index="12">
               <value>
-                <![CDATA[Married]]>
+                <![CDATA[Head - Multiple Neck Injury]]>
               </value>
             </param>
             <param index="13">
               <value>
-                <![CDATA[Chezhiyan]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[56,789]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Office Street two]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[Office City two]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[Office State two]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[9876589878]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[12/25/2018]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[12/26/2018]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[12/27/2018]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[8000]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[Head]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[Head top]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[Head - Eyes]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[Accident]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[Stone]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[Occupational Disease or Cumulative Injury - Mental Disorder]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[Burn or Scald—Heat or Cold Exposures—Contact With - Chemicals]]>
-              </value>
-            </param>
-            <param index="36">
-              <value>
-                <![CDATA[Work]]>
-              </value>
-            </param>
-            <param index="37">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="38">
-              <value>
-                <![CDATA[11/20/2018]]>
-              </value>
-            </param>
-            <param index="39">
-              <value>
-                <![CDATA[$15,963.00]]>
-              </value>
-            </param>
-            <param index="40">
-              <value>
-                <![CDATA[user@mail.com]]>
-              </value>
-            </param>
-            <param index="41">
-              <value>
-                <![CDATA[D:\data.jpg]]>
-              </value>
-            </param>
-            <param index="42">
-              <value>
-                <![CDATA[Thank you for your submission!]]>
-              </value>
-            </param>
-            <param index="43">
-              <value>
-                <![CDATA[IMPORTANT NOTE: THIS FORM IS NOT CONSIDERED SUBMITTED AND WILL NOT BE PROCESSED BY THE INDUSTRIAL COMMISSION OF ARIZONA UNTIL SIGNED. TO COMPLETE THE ELECTRONIC SIGNATURE PROCESS, FOLLOW THE INSTRUCTIONS SENT TO THE E-MAIL ADDRESS YOU PROVIDED. THE ELECTRONIC SIGNATURE PROCESS WILL BE AVAILABLE FOR 7 DAYS AFTER A FORM IS SUBMITTED.]]>
+                <![CDATA[Head - Vertebrae]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- formValueValidation -->
-        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8]" name="checkTestAfterExecution" is-config="true" duration-ms="2" started-at="2018-12-26T07:45:44Z" finished-at="2018-12-26T07:45:44Z">
+        </test-method> <!-- PartOfBodylinkTest -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6]" name="checkTestAfterExecution" is-config="true" duration-ms="38" started-at="2019-01-08T10:19:05Z" finished-at="2019-01-08T10:19:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=formValueValidation status=SUCCESS method=Object_101_Test.formValueValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8] output={null}]]]>
+                <![CDATA[[TestResult name=PartOfBodylinkTest status=SUCCESS method=EmployersReportFormTest.PartOfBodylinkTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTestAfterExecution -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8]" name="closeBrowser" is-config="true" duration-ms="285" started-at="2018-12-26T07:45:44Z" finished-at="2018-12-26T07:45:44Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6]" name="openBrowser" is-config="true" duration-ms="9951" started-at="2019-01-08T10:19:05Z" finished-at="2019-01-08T10:19:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:gov.mst.automation.ica.testmodel.Object_101_Test@4cf777e8]" name="tearDown" is-config="true" duration-ms="513" started-at="2018-12-26T07:45:44Z" finished-at="2018-12-26T07:45:45Z">
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="RequiredFieldValidation()[pri:3, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6]" name="RequiredFieldValidation" duration-ms="12025" started-at="2019-01-08T10:19:15Z" finished-at="2019-01-08T10:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RequiredFieldValidation -->
+        <test-method status="PASS" signature="checkTestAfterExecution(org.testng.ITestResult)[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6]" name="checkTestAfterExecution" is-config="true" duration-ms="155" started-at="2019-01-08T10:19:27Z" finished-at="2019-01-08T10:19:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RequiredFieldValidation status=SUCCESS method=EmployersReportFormTest.RequiredFieldValidation()[pri:3, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestAfterExecution -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest@25bbe1b6]" name="tearDown" is-config="true" duration-ms="8316" started-at="2019-01-08T10:19:27Z" finished-at="2019-01-08T10:19:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- gov.mst.automation.ica.testmodel.Object_101_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- gov.mst.automation.ica.smoketestmodel.EmployersReportFormTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- SmokeSuite -->
 </testng-results>

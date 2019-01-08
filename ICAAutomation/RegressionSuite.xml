@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="RegressionSuite"  parallel = "tests">
 
 	<listeners>
 		<listener
-			class-name="gov.mst.automation.ica.commonutility.RetryListener" />
+			class-name="gov.mst.automation.ica.retrylistener.RetryListener" />
 	</listeners>
 	
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="ChromeTest">
 		<parameter name="browserName" value="chrome"></parameter>
 		<classes>
-				<class	name="gov.mst.automation.ica.testmodel.Object_101_Test"></class>
+				<class	name="gov.mst.automation.ica.regressiontestmodel.Object_101_Test"></class>
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="5" name="FirefoxTest">
+		<parameter name="browserName" value="firefox"></parameter>
+		<classes>
+				<class	name="gov.mst.automation.ica.regressiontestmodel.Object_101_Test"></class>
 		</classes>
 	</test> <!-- Test -->
 	

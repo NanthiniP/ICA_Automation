@@ -1,4 +1,4 @@
-package gov.mst.automation.ica.testmodel;
+package gov.mst.automation.ica.regressiontestmodel;
 
 /*
 	* Author	 				: Nanthini PushpaRaja
@@ -19,13 +19,13 @@ import org.testng.annotations.DataProvider;
 
 import org.testng.annotations.Test;
 import gov.mst.automation.ica.baseclass.BaseTest;
-import gov.mst.automation.ica.commonutility.Log;
 import gov.mst.automation.ica.constant.ExcelConstants;
 import gov.mst.automation.ica.excelutility.ExcelUtility;
 import gov.mst.automation.ica.pagemodel.EmployersReportFormModel;
 import gov.mst.automation.ica.pagemodel.FormSubmissionPageModel;
 import gov.mst.automation.ica.pagemodel.LoginPageModel;
 import gov.mst.automation.ica.pagemodel.Object_101_Model;
+import gov.mst.automation.ica.report.Log;
 import gov.mst.automation.ica.report.Report;
 
 public class Object_101_Test extends BaseTest{

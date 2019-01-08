@@ -75,36 +75,31 @@ public class ExcelUtility {
 	
 	// Method is used to return the data from a column
 	
-	public String getData(String tcName, String columnName) throws Exception
-	{
-		
+	public String getData(String tcName, String columnName) throws Exception {
+
 		int rows = sheet.getLastRowNum();
-		
-		String result= null;
-		
-		for(int i=1;i<=rows;i++)
-		{
+
+		String result = null;
+
+		for (int i = 1; i <= rows; i++) {
 			String tcname = sheet.getRow(i).getCell(0).getStringCellValue();
-			
-			if(tcname.equals(tcName))
-			{
+
+			if (tcname.equals(tcName)) {
 				int col = sheet.getRow(i).getLastCellNum();
-				
-				for(int j=2;j<col;j++)
-				{
+
+				for (int j = 2; j < col; j++) {
 					String colname = sheet.getRow(0).getCell(j).getStringCellValue();
-					
-					if(colname.equalsIgnoreCase(columnName))
-					{
-						result = getStringData(i, j);	
+
+					if (colname.equalsIgnoreCase(columnName)) {
+						result = getStringData(i, j);
 					}
-									
+
 				}
-						
-				}
+
 			}
-								
-			return result;			
+		}
+
+		return result;
 	}
 	
 	

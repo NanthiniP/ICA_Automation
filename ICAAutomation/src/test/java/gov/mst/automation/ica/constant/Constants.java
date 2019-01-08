@@ -37,5 +37,16 @@ public class Constants {
 	public static String username = "nanthini.p@mstsolutions.com";
 	public static String password = "kfqdgdxgpvwgjcrv";
 	
+	
+	// Email reporting credentials
+	
+	public static String email_from="nanthini.p@mstsolutions.com";
+	public static String email_to="nanthini.p@mstsolutions.com";
+	public static String 	email_pwd="kfqdgdxgpvwgjcrv";
+	public 	static String email_smtp="imap.outlook.com";
+	
+	// Report Path
+	
+	public static String REPORTPATH = "src\\test\\resources\\Reports\\extentreport.html";
 		
 }
