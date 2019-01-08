@@ -1,82 +1,82 @@
 0    [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser launched
-1215 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Implicit wait applied to browser with 20 seconds
-1217 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
-1217 [TestNG] INFO  gov.mst.automation.ica.report.Log  - $$$$$$$$$$$$$$$$$$$$$                 TC01  Check whether the given values are available in Part of Body table       $$$$$$$$$$$$$$$$$$$$$$$$$
-1217 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
-8621 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Part Of Body link clicked
-8642 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Get all the browser windows
-8653 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Tab to next window
-9904 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Got all the table items
-10070 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10209 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10289 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10350 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10411 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10474 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10536 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10591 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10654 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10716 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10776 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10837 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-10913 [TestNG] INFO  gov.mst.automation.ica.report.Log  - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
-10913 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-10913 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-10913 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-13051 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser closed
-15404 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser launched
-16565 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Implicit wait applied to browser with 20 seconds
-16565 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
-16566 [TestNG] INFO  gov.mst.automation.ica.report.Log  - $$$$$$$$$$$$$$$$$$$$$                 TC03 To check whether the error message is displayed to enter the value in Lastname       $$$$$$$$$$$$$$$$$$$$$$$$$
-16566 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
-23675 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Url navigated
-26674 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Submit button clicked
-26812 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Got the actual text
-26837 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Both values same. returns true
-26837 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Validation done
-26839 [TestNG] INFO  gov.mst.automation.ica.report.Log  - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
-26839 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-26840 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-26840 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-28914 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser closed
-31564 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser launched
-32483 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Implicit wait applied to browser with 20 seconds
-32483 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
-32483 [TestNG] INFO  gov.mst.automation.ica.report.Log  - $$$$$$$$$$$$$$$$$$$$$                 TC01  Check whether the given values are available in Part of Body table       $$$$$$$$$$$$$$$$$$$$$$$$$
-32483 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
-43565 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Part Of Body link clicked
-43854 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Get all the browser windows
-43875 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Tab to next window
-47958 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Got all the table items
-48879 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-48958 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49049 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49181 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49263 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49339 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49406 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49473 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49599 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49694 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49779 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-49895 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
-50022 [TestNG] INFO  gov.mst.automation.ica.report.Log  - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
-50022 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-50022 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-50022 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-50049 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser closed
-60791 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser launched
-61297 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Implicit wait applied to browser with 20 seconds
-61298 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
-61298 [TestNG] INFO  gov.mst.automation.ica.report.Log  - $$$$$$$$$$$$$$$$$$$$$                 TC03 To check whether the error message is displayed to enter the value in Lastname       $$$$$$$$$$$$$$$$$$$$$$$$$
-61298 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
-69576 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Url navigated
-70420 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Submit button clicked
-77150 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Got the actual text
-77150 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Both values same. returns true
-77150 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Validation done
-77153 [TestNG] INFO  gov.mst.automation.ica.report.Log  - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
-77153 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-77153 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-77153 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
-77409 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser closed
+1296 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Implicit wait applied to browser with 20 seconds
+1299 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
+1299 [TestNG] INFO  gov.mst.automation.ica.report.Log  - $$$$$$$$$$$$$$$$$$$$$                 TC01  Check whether the given values are available in Part of Body table       $$$$$$$$$$$$$$$$$$$$$$$$$
+1299 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
+12709 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser launched
+13770 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Implicit wait applied to browser with 20 seconds
+13770 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
+13770 [TestNG] INFO  gov.mst.automation.ica.report.Log  - $$$$$$$$$$$$$$$$$$$$$                 TC01  Check whether the given values are available in Part of Body table       $$$$$$$$$$$$$$$$$$$$$$$$$
+13770 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
+16525 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Part Of Body link clicked
+16537 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Get all the browser windows
+16544 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Tab to next window
+18403 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Got all the table items
+18805 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+18864 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+18914 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+18983 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19047 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19108 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19180 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19257 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19337 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19394 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19454 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19520 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+19600 [TestNG] INFO  gov.mst.automation.ica.report.Log  - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+19600 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+19600 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+19600 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+21922 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser closed
+24207 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Part Of Body link clicked
+24432 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser launched
+24500 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Get all the browser windows
+24517 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Tab to next window
+25565 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Implicit wait applied to browser with 20 seconds
+25565 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
+25565 [TestNG] INFO  gov.mst.automation.ica.report.Log  - $$$$$$$$$$$$$$$$$$$$$                 TC03 To check whether the error message is displayed to enter the value in Lastname       $$$$$$$$$$$$$$$$$$$$$$$$$
+25565 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
+30926 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Got all the table items
+31481 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+31690 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+31852 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+31954 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Url navigated
+31960 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+32091 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+32929 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+33046 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+33126 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+33200 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+33280 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+33370 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+33457 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Values same
+33603 [TestNG] INFO  gov.mst.automation.ica.report.Log  - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+33603 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+33603 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+33603 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+33629 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser closed
+35102 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Submit button clicked
+35197 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Got the actual text
+35329 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Both values same. returns true
+35329 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Validation done
+35341 [TestNG] INFO  gov.mst.automation.ica.report.Log  - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+35341 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+35341 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+35342 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+36064 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser closed
+46279 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser launched
+46597 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Implicit wait applied to browser with 20 seconds
+46598 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
+46598 [TestNG] INFO  gov.mst.automation.ica.report.Log  - $$$$$$$$$$$$$$$$$$$$$                 TC03 To check whether the error message is displayed to enter the value in Lastname       $$$$$$$$$$$$$$$$$$$$$$$$$
+46598 [TestNG] INFO  gov.mst.automation.ica.report.Log  - ****************************************************************************************
+54747 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Url navigated
+55148 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Submit button clicked
+61316 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Got the actual text
+61316 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Both values same. returns true
+61316 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Validation done
+61319 [TestNG] INFO  gov.mst.automation.ica.report.Log  - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+61319 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+61319 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+61319 [TestNG] INFO  gov.mst.automation.ica.report.Log  -  
+61403 [TestNG] INFO  gov.mst.automation.ica.report.Log  - Browser closed

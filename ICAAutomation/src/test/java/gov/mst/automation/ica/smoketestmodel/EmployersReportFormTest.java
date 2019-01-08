@@ -27,7 +27,7 @@ public class EmployersReportFormTest  extends BaseTest{
 	
 	// Test is used to validate when the Employer report Form is submitted successfully
 	
-	/*@Test(dataProvider = "employerReportFormSubmission",priority = 1)
+	@Test(dataProvider = "employerReportFormSubmission",priority = 1)
 	public void employerReportFormSubmission(String TestID, String Description, String LastName, String FirstName, String SocialSecurityNumber, String BirthDate, String HomeAddress, String HomeCity, String HomeState, String HomeZipCode, String HomeTelephone, String Sex, String MaritalStatus, String EmployerName, String FeinNumber, String OfficeAddress, String OfficeCity, String OfficeState, String OfficeZipCode, String OfficeTelephone, String DateOfInjury, String DateEmployerNotifiedOfInjury, String LastDayOfWorkAfterInjury, String EmployerOccupationWhenInjured, String InjuryOccursOnInjuryPremises, String WhatWasTheInjury, String PartOfBodyInjured, String PartOfBodyInjuryTable, String Fatal, String EmployeeTreatedInEmergencyRoom, String EmployeeHospitalizedOvernight, String ValidityOfClaimDoubted, String WhatHappened, String SubstanceDirectlyHarmedEmployee, String NatureOfInjury, String CauseOfInjury, String EmployeeDoingJustBeforeIncident, String WorkerInEmployWhenInjured, String DateOfLastHire, String GrossEarningsOfEmployeePreceedingInjury, String SubmitterEmailAddress, String UploadFile, String ThankYou, String ImportantNote) throws Exception
 	{		
 		Log.startTestCase(TestID+"  "+Description);
@@ -39,7 +39,7 @@ public class EmployersReportFormTest  extends BaseTest{
 		formSubmissionPage.importantNoteValidation(ImportantNote);
 		Report.testStepStatus("Employer Report Form is submitted successfully", "Pass", "");
 		Log.endTestCase();
-	}*/
+	}
 		
 	
 	// Data Provider returns the data to fill the Employer Report Form
